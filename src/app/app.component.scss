@@ -14,6 +14,12 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+.my-font-size {
+  font-size: 11pt !important; // did not yet look at the existing css, thus I used !important to make sure its applied
+}
+
+
 :root {
   --bs-blue: #387BF5;
   --bs-indigo: #727cf5;
