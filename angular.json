@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "m152-severintoldo"
+    }
+  },
+  "defaultProject": "m152-severintoldo",
+  "cli": {
+    "analytics": false
+  }
 }
