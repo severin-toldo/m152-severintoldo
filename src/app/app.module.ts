@@ -13,7 +13,6 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { ScrollIndicatorComponent } from './nav/scroll-indicator/scroll-indicator.component';
 
 // const cookieConfig:NgcCookieConsentConfig = {
 //   cookie: {
@@ -41,7 +40,6 @@ import { ScrollIndicatorComponent } from './nav/scroll-indicator/scroll-indicato
     ImprintComponent,
     NavComponent,
     HomeComponent,
-    ScrollIndicatorComponent
   ],
   imports: [
     BrowserModule,
