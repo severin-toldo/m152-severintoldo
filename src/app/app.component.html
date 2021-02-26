@@ -1,19 +1,4 @@
 <app-nav></app-nav>
 <!--<app-template-example></app-template-example>-->
-<!--<toaster-container [toasterconfig]="toasterConfig"></toaster-container>-->
-<!--<app-custom-toast></app-custom-toast>-->
-<div class="m-5">
-  <br/>
-  <br/>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <br/>
-  <br/>
-  <button class="btn btn-primary rounded-pill">Sign Up</button>
-  <br/>
-  <br/>
-  <button class="btn btn-outline-primary rounded-pill">Sign Up</button>
-  <br/>
-  <br/>
-</div>
-<app-cookie-warning *ngIf="!clicked" (onClick)="onClick()"></app-cookie-warning>
 <router-outlet></router-outlet>
+<app-cookie-warning></app-cookie-warning>

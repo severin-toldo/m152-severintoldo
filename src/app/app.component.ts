@@ -52,10 +52,6 @@ export class AppComponent implements AfterViewInit, OnInit, OnDestroy {
 
   }
 
-  public onClick() {
-    this.clicked = true;
-  }
-
   ngOnInit(): void {
     // // subscribe to cookieconsent observables to react to main events
     // this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(

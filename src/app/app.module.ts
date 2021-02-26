@@ -13,22 +13,8 @@ import { ImprintComponent } from './intercom/imprint/imprint.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './intercom/home/home.component';
 import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {ReactiveFormsModule} from "@angular/forms";
 
-// const cookieConfig:NgcCookieConsentConfig = {
-//   cookie: {
-//     domain: 'localhost' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
-//   },
-//   palette: {
-//     popup: {
-//       background: '#000'
-//     },
-//     button: {
-//       background: '#f1d600'
-//     }
-//   },
-//   theme: 'edgeless',
-//   type: 'opt-out'
-// };
 
 @NgModule({
   declarations: [
@@ -48,8 +34,7 @@ import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbCollapseModule,
     ToasterModule.forRoot(),
     NgbModule,
-
-    // NgcCookieConsentModule.forRoot(cookieConfig)
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

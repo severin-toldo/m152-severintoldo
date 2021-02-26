@@ -32,16 +32,16 @@ $theme-colors: (
 }
 
 .navbar {
-  //padding-right: 10rem !important;
-  //padding-left: 10rem !important;
-  //padding-top: 3rem !important;
-  //padding-bottom: 3rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   border-bottom-style: solid !important;
   border-bottom-color: $secondaryLight !important;
 }
 
-
-
+// changes checked color to primary color
+input[type="checkbox"], input[type="radio"] {
+  filter: hue-rotate(140deg);
+}
 
 
 

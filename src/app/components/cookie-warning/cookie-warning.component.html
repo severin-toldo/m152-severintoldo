@@ -1,5 +1,28 @@
-<div class="custom-toaster">
-  <p>This website uses cookies to ensure you get the best experience on our website.</p> <a href="www.google.com">Learn more</a>
-  <button (click)="clickMe()">Got it!</button>
+<div class="cookie-warning-wrapper d-flex justify-content-center">
+  <ngb-toast *ngIf="isVisible" [autohide]="false" class="cookie-warning">
+    <h5>Diese Webseite verwendet Cookies</h5>
+    <p>Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Funktionen für soziale Medien anbieten zu können und Zugriffe auf unsere Webseite analysieren zu können. Ausserdem geben wir Informationen zu Ihrer Verwendung unserer Webseite an unsere Partner für sozialen Medien, Werbung und Analysen weiter. Unsere Partner führen diese Informationen möglicherweise mit weiteren Daten zusammen, die Sie ihnen bereitgestellt haben oder die sie im Rahmen Ihrer Nutzung der Dienste gesammelt haben. Sie geben Einwilligung zu unseren Cookies, wenn Sie unsere Webseite weiterhin nutzen.</p>
+    <form [formGroup]="cookiesForm">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="requiredCheckbox" formControlName="required">
+        <label class="form-check-label" for="requiredCheckbox">Notwendig</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="preferencesCheckbox" formControlName="preferences">
+        <label class="form-check-label" for="preferencesCheckbox">Präferenzen</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="statisticsCheckbox" formControlName="statistics">
+        <label class="form-check-label" for="statisticsCheckbox">Statistiken</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="marketingCheckbox" formControlName="marketing">
+        <label class="form-check-label" for="marketingCheckbox">Marketing</label>
+      </div>
+      <button class="btn btn-outline-primary rounded-pill ml-2" (click)="saveSettings()">Meine Einstellungen speichern</button>
+      <button class="btn btn-primary rounded-pill ml-2" (click)="consentAll()">Allen Zustimmen</button>
+    </form>
+  </ngb-toast>
 </div>
+
 

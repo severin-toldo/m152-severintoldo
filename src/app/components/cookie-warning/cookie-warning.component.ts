@@ -1,4 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-cookie-warning',
@@ -7,15 +8,35 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class CookieWarningComponent implements OnInit {
 
-  @Output() public onClick = new EventEmitter<void>();
+  public cookiesForm: FormGroup;
+  public isVisible = true;
 
-  constructor() { }
+
+  constructor(private fb: FormBuilder) {
+  }
 
   public ngOnInit(): void {
+    this.cookiesForm = this.fb.group({
+      required: [{value: true, disabled: true}, [Validators.required]],
+      preferences: [''],
+      statistics: [''],
+      marketing: [''],
+    });
   }
 
-  public clickMe(): void {
-    this.onClick.emit();
+  // TODO proccess response
+  public consentAll(): void {
+    console.log(this.cookiesForm.value);
+    this.hideToaster();
   }
 
+  // TODO proccess response
+  public saveSettings(): void {
+    console.log(this.cookiesForm.value);
+    this.hideToaster();
+  }
+
+  public hideToaster(): void {
+    this.isVisible = false;
+  }
 }
