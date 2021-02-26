@@ -1,6 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/scss/bootstrap';
 @import '~angular2-toaster/toaster.min.css';
 @import '~ngx-toastr/toastr.css';
 
+$primary: #F53838;
+$primaryDark: darken($primary, 10);
+$secondaryDark: darken($secondary, 10);
+$secondaryLight: lighten($secondary, 30);
+
+$theme-colors: (
+  "primary": $primary,
+);
+
+.rounded-pill {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.nav-link {
+  color: $secondary !important;
+}
+
+.nav-link:hover {
+  color: $primary !important;
+  cursor: pointer !important;
+}
+
+.active a {
+  color: $primaryDark !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: $primaryDark !important;
+}
+
+.navbar {
+  //padding-right: 10rem !important;
+  //padding-left: 10rem !important;
+  //padding-top: 3rem !important;
+  //padding-bottom: 3rem !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: $secondaryLight !important;
+}
+
+
+
+
+
+
+
+
+
+//.btn:focus, .btn:active {
+//  outline: none !important;
+//  box-shadow: none !important;
+//}
+//
+//.nav-link {
+//  color: $secondary !important;
+//}
+
+//.nav-item {
+//  color: red;
+//}
+
+//.navbar .navbar-nav > .active > .nav-link {
+//  color: red !important;
+//  background: #d65c14 !important;
+//}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

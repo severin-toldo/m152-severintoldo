@@ -10,9 +10,10 @@ import { CookieWarningComponent } from './cookie-warning/cookie-warning.componen
 import { CopyrightComponent } from './copyright/copyright.component';
 import { DsgvoComponent } from './dsgvo/dsgvo.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import {NgcCookieConsentConfig, NgcCookieConsentModule} from "ngx-cookieconsent";
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
+import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ScrollIndicatorComponent } from './nav/scroll-indicator/scroll-indicator.component';
 
 // const cookieConfig:NgcCookieConsentConfig = {
 //   cookie: {
@@ -39,13 +40,17 @@ import { HomeComponent } from './home/home.component';
     DsgvoComponent,
     ImprintComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ScrollIndicatorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgbCollapseModule,
     ToasterModule.forRoot(),
+    NgbModule,
+
     // NgcCookieConsentModule.forRoot(cookieConfig)
   ],
   providers: [],
