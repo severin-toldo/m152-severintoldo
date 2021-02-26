@@ -43,6 +43,15 @@ input[type="checkbox"], input[type="radio"] {
   filter: hue-rotate(140deg);
 }
 
+.btn-link {
+  outline: none !important;
+  box-shadow: none !important;
+  color: $primary !important;
+}
+
+
+
+
 
 
 
