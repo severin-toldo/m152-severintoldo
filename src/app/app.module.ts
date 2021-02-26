@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TemplateExampleComponent } from './template-example/template-example.component';
+import { TemplateExampleComponent } from './components/template-example/template-example.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToasterModule} from "angular2-toaster";
-import { CookieWarningComponent } from './cookie-warning/cookie-warning.component';
-import { CopyrightComponent } from './copyright/copyright.component';
-import { DsgvoComponent } from './dsgvo/dsgvo.component';
-import { ImprintComponent } from './imprint/imprint.component';
-import { NavComponent } from './nav/nav.component';
-import { HomeComponent } from './home/home.component';
+import { CookieWarningComponent } from './components/cookie-warning/cookie-warning.component';
+import { CopyrightComponent } from './intercom/copyright/copyright.component';
+import { DsgvoComponent } from './intercom/dsgvo/dsgvo.component';
+import { ImprintComponent } from './intercom/imprint/imprint.component';
+import { NavComponent } from './components/nav/nav.component';
+import { HomeComponent } from './intercom/home/home.component';
 import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // const cookieConfig:NgcCookieConsentConfig = {
