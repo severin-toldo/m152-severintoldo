@@ -1,7 +1,4 @@
-<div class="m-5">
-  <h1>{{ 'INTERCOM.COPYRIGHT.TITLE' | translate }}</h1>
-  <br/>
-  <br/>
+<app-content [title]="'INTERCOM.COPYRIGHT.TITLE'">
   <ngb-accordion>
     <ngb-panel *ngFor="let key of questionsAndAnswers | keyvalue"
                [title]="key.key">
@@ -10,22 +7,4 @@
       </ng-template>
     </ngb-panel>
   </ngb-accordion>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</app-content>
