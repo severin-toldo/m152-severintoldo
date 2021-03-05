@@ -9,9 +9,9 @@ export class NavService {
 
   public getTopNav(): NavLink[] {
     const navLinks = [
-      new NavLink('DSVGO', dsvgoRoute()),
-      new NavLink('Urheberecht Q&A', copyrightRoute()),
-      new NavLink('Impressum', imprintRoute()),
+      new NavLink('INTERCOM.DSGVO.TITLE', dsvgoRoute()),
+      new NavLink('INTERCOM.COPYRIGHT.TITLE', copyrightRoute()),
+      new NavLink('INTERCOM.IMPRINT.TITLE', imprintRoute()),
     ];
 
     return navLinks;

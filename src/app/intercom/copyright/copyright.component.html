@@ -1,8 +1,8 @@
 <div class="m-5">
-  <h1>Fragen und Antworten zum Urheberrecht</h1>
+  <h1>{{ 'INTERCOM.COPYRIGHT.TITLE' | translate }}</h1>
   <br/>
   <br/>
-  <ngb-accordion #acc="ngbAccordion">
+  <ngb-accordion>
     <ngb-panel *ngFor="let key of questionsAndAnswers | keyvalue"
                [title]="key.key">
       <ng-template ngbPanelContent>

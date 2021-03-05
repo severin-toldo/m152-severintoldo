@@ -19,17 +19,17 @@ const routes: Routes = [
   {
     path: 'copyright',
     component: CopyrightComponent,
-    data: {title: 'Urheberecht'},
+    data: {title: 'INTERCOM.COPYRIGHT.TITLE'},
   },
   {
     path: 'dsgvo',
     component: DsgvoComponent,
-    data: {title: 'DSGVO'},
+    data: {title: 'INTERCOM.DSGVO.TITLE'},
   },
   {
     path: 'imprint',
     component: ImprintComponent,
-    data: {title: 'Impressum'},
+    data: {title: 'INTERCOM.IMPRINT.TITLE'},
   }
 ];
 
