@@ -3,10 +3,10 @@
   <br/>
   <br/>
   <ngb-accordion #acc="ngbAccordion">
-    <ngb-panel *ngFor="let questionsAndAnswerKey of questionsAndAnswers.keys()"
-               [title]="questionsAndAnswerKey">
+    <ngb-panel *ngFor="let key of questionsAndAnswers | keyvalue"
+               [title]="key.key">
       <ng-template ngbPanelContent>
-        {{ questionsAndAnswers.get(questionsAndAnswerKey) }}
+        <div class="ml-3" [innerHTML]="key.value"></div>
       </ng-template>
     </ngb-panel>
   </ngb-accordion>
