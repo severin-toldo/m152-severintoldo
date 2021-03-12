@@ -7,7 +7,7 @@ import { TemplateExampleComponent } from './components/template-example/template
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToasterModule} from "angular2-toaster";
 import { CookieWarningComponent } from './components/cookie-warning/cookie-warning.component';
-import { CopyrightComponent } from './intercom/copyright/copyright.component';
+import { CopyrightQAComponent } from './intercom/copyright-qa/copyright-qa.component';
 import { DsgvoComponent } from './intercom/dsgvo/dsgvo.component';
 import { ImprintComponent } from './intercom/imprint/imprint.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -18,6 +18,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import { ContentComponent } from './components/content/content.component';
+import {FeatherModule} from "angular-feather";
+import {Menu} from "angular-feather/icons";
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -29,7 +31,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppComponent,
     TemplateExampleComponent,
     CookieWarningComponent,
-    CopyrightComponent,
+    CopyrightQAComponent,
     DsgvoComponent,
     ImprintComponent,
     NavComponent,
@@ -53,8 +55,12 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         deps: [HttpClient],
       },
     }),
+    FeatherModule.pick({
+      Menu
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

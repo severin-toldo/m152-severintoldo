@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-copyright',
-  templateUrl: './copyright.component.html',
-  styleUrls: ['./copyright.component.scss']
+  selector: 'app-copyright-qa',
+  templateUrl: './copyright-qa.component.html',
+  styleUrls: ['./copyright-qa.component.scss']
 })
-export class CopyrightComponent implements OnInit {
+export class CopyrightQAComponent implements OnInit {
 
   public questionsAndAnswers = new Map<string, string>();
 
