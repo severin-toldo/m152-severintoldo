@@ -31,14 +31,21 @@ $theme-colors: (
   border-bottom-color: $primaryDark !important;
 }
 
+.nav-link {
+  border-bottom-style: solid !important;
+  border-bottom-color: transparent !important;
+}
+
 .navbar {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
   border-bottom-style: solid !important;
   border-bottom-color: $secondaryLight !important;
 }
 
-// changes checked color to primary color
+.navbar-brand {
+  margin: 0 !important;
+}
+
+// changes checked of checkbox color to primary color
 input[type="checkbox"], input[type="radio"] {
   filter: hue-rotate(140deg);
 }
@@ -49,31 +56,6 @@ input[type="checkbox"], input[type="radio"] {
   color: $primary !important;
 }
 
-
-
-
-
-
-
-
-
-//.btn:focus, .btn:active {
-//  outline: none !important;
-//  box-shadow: none !important;
-//}
-//
-//.nav-link {
-//  color: $secondary !important;
-//}
-
-//.nav-item {
-//  color: red;
-//}
-
-//.navbar .navbar-nav > .active > .nav-link {
-//  color: red !important;
-//  background: #d65c14 !important;
-//}
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
