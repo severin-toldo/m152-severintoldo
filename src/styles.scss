@@ -2,6 +2,9 @@
 @import '~angular2-toaster/toaster.min.css';
 @import '~ngx-toastr/toastr.css';
 
+/*
+  Colors
+*/
 $primary: #F53838;
 $primaryDark: darken($primary, 10);
 $secondaryDark: darken($secondary, 10);
@@ -11,11 +14,19 @@ $theme-colors: (
   "primary": $primary,
 );
 
+
+/*
+  Buttons
+*/
 .rounded-pill {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
 
+
+/*
+  Nav
+*/
 .nav-link {
   color: $secondary !important;
 }
@@ -45,17 +56,20 @@ $theme-colors: (
   margin: 0 !important;
 }
 
-// changes checked of checkbox color to primary color
-input[type="checkbox"], input[type="radio"] {
-  filter: hue-rotate(140deg);
-}
-
 .btn-link {
   outline: none !important;
   box-shadow: none !important;
   color: $primary !important;
 }
 
+
+/*
+  Checkboxes
+*/
+// changes checked of checkbox color to primary color
+input[type="checkbox"], input[type="radio"] {
+  filter: hue-rotate(140deg);
+}
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
