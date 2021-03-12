@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {NavLink} from "../model/nav-link.model";
-import {copyrightRoute, dsvgoRoute, homeRoute, imprintRoute} from "../shared/routes";
+import {copyrightQARoute, dsvgoRoute, homeRoute, imprintRoute} from "../shared/routes";
 
 @Injectable({
   providedIn: 'root'
@@ -8,13 +8,11 @@ import {copyrightRoute, dsvgoRoute, homeRoute, imprintRoute} from "../shared/rou
 export class NavService {
 
   public getTopNav(): NavLink[] {
-    const navLinks = [
-      new NavLink('INTERCOM.DSGVO.TITLE', dsvgoRoute()),
-      new NavLink('INTERCOM.COPYRIGHT.TITLE', copyrightRoute()),
+    return [
+      new NavLink('INTERCOM.COPYRIGHT.TITLE')
+        .addSub(new NavLink('INTERCOM.COPYRIGHT.DSGVO.TITLE', dsvgoRoute()))
+        .addSub(new NavLink('INTERCOM.COPYRIGHT.COPYRIGHT_QA.TITLE', copyrightQARoute())),
       new NavLink('INTERCOM.IMPRINT.TITLE', imprintRoute()),
     ];
-
-    return navLinks;
   }
-
 }

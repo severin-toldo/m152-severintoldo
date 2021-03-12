@@ -62,6 +62,12 @@ $theme-colors: (
   color: $primary !important;
 }
 
+.nav-link-subs-container {
+  background-color: $light;
+  border-bottom-style: solid;
+  border-bottom-color: $secondaryLight;
+}
+
 
 /*
   Checkboxes

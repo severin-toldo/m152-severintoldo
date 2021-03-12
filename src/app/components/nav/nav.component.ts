@@ -26,6 +26,8 @@ export class NavComponent implements OnInit, AfterViewChecked {
   public navLinks: NavLink[] = [];
   public isMenuCollapsed = true;
   public isNavbarCollapsed = false;
+  public selectedNavLink: NavLink;
+  public isNavLinkSubsContainerVisible = false;
 
   public readonly homeRoute = homeRoute();
 
@@ -50,13 +52,25 @@ export class NavComponent implements OnInit, AfterViewChecked {
     this.isMenuCollapsed = !this.isMenuCollapsed;
   }
 
-  public onNavLinkClicked(navLink: NavLink): void {
-    this.router.navigate(navLink.route);
-    this.isMenuCollapsed = true;
+  public openNavLinkSubsContainer(navLink: NavLink): void {
+    this.selectedNavLink = navLink;
+    this.isNavLinkSubsContainerVisible = true;
   }
 
+  public routeToNavLinkRoute(navLink: NavLink): void {
+    this.selectedNavLink = navLink;
+    this.isNavLinkSubsContainerVisible = false;
+    this.isMenuCollapsed = true;
+    this.router.navigate(navLink.route);
+  }
+
+  // public onNavLinkClicked(navLink: NavLink): void {
+  //   this.isMenuCollapsed = true;
+  //   this.router.navigate(navLink.route);
+  // }
+
   public isNavLinkActive(navLink: NavLink): boolean {
-    return navLink.route[0] === getCurrentRoute();
+    return navLink.route && navLink.route[0] === getCurrentRoute();
   }
 
   private isNavBarCollapsed(): boolean {

@@ -1,6 +1,6 @@
 export const homeRoute = () => [`/home`];
-export const dsvgoRoute = () => [`/dsgvo`];
-export const copyrightQARoute = () => [`/copyright-qa`];
+export const dsvgoRoute = () => [`/copyright/dsgvo`];
+export const copyrightQARoute = () => [`/copyright/copyright-qa`];
 export const imprintRoute = () => [`/imprint`];
 
 
