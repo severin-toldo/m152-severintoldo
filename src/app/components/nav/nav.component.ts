@@ -12,8 +12,7 @@ import {NavLink} from "../../model/nav-link.model";
 import {NavService} from "../../service/nav.service";
 import {homeRoute} from "../../shared/routes";
 import {Router} from "@angular/router";
-import {getCssProperties, getCssProperty, getCurrentRoute} from "../../shared/other.util";
-import {Subject} from "rxjs";
+import {getCssProperty} from "../../shared/other.util";
 
 
 @Component({
@@ -26,8 +25,6 @@ export class NavComponent implements OnInit, AfterViewChecked {
   public navLinks: NavLink[] = [];
   public isMenuCollapsed = true;
   public isNavbarCollapsed = false;
-  public selectedNavLink: NavLink;
-  public isNavLinkSubsContainerVisible = false;
 
   public readonly homeRoute = homeRoute();
 
@@ -52,25 +49,8 @@ export class NavComponent implements OnInit, AfterViewChecked {
     this.isMenuCollapsed = !this.isMenuCollapsed;
   }
 
-  public openNavLinkSubsContainer(navLink: NavLink): void {
-    this.selectedNavLink = navLink;
-    this.isNavLinkSubsContainerVisible = true;
-  }
-
-  public routeToNavLinkRoute(navLink: NavLink): void {
-    this.selectedNavLink = navLink;
-    this.isNavLinkSubsContainerVisible = false;
+  public onRoute(): void {
     this.isMenuCollapsed = true;
-    this.router.navigate(navLink.route);
-  }
-
-  // public onNavLinkClicked(navLink: NavLink): void {
-  //   this.isMenuCollapsed = true;
-  //   this.router.navigate(navLink.route);
-  // }
-
-  public isNavLinkActive(navLink: NavLink): boolean {
-    return navLink.route && navLink.route[0] === getCurrentRoute();
   }
 
   private isNavBarCollapsed(): boolean {

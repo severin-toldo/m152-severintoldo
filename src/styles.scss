@@ -27,26 +27,6 @@ $theme-colors: (
 /*
   Nav
 */
-.nav-link {
-  color: $secondary !important;
-}
-
-.nav-link:hover {
-  color: $primary !important;
-  cursor: pointer !important;
-}
-
-.active a {
-  color: $primaryDark !important;
-  border-bottom-style: solid !important;
-  border-bottom-color: $primaryDark !important;
-}
-
-.nav-link {
-  border-bottom-style: solid !important;
-  border-bottom-color: transparent !important;
-}
-
 .navbar {
   border-bottom-style: solid !important;
   border-bottom-color: $secondaryLight !important;
@@ -56,16 +36,48 @@ $theme-colors: (
   margin: 0 !important;
 }
 
-.btn-link {
-  outline: none !important;
-  box-shadow: none !important;
-  color: $primary !important;
+.active a {
+  color: $primaryDark !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: $primaryDark !important;
 }
 
-.nav-link-subs-container {
-  background-color: $light;
-  border-bottom-style: solid;
-  border-bottom-color: $secondaryLight;
+.nav-link {
+  color: $secondary !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: transparent !important;
+}
+
+.nav-link:hover {
+  color: $primary !important;
+  cursor: pointer !important;
+}
+
+.abstract-nav-link-dropdown {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.nav-link-dropdown {
+  @extend .abstract-nav-link-dropdown;
+  color: $secondary !important;
+}
+
+.nav-link-dropdown:hover,
+.nav-link-dropdown:focus,
+.nav-link-dropdown:active,
+.nav-link-dropdown.active,
+.open > .dropdown-toggle .nav-link-dropdown {
+  @extend .abstract-nav-link-dropdown;
+  color: $primary !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+// TODO on active set border
+.nav-link-dropdown-menu > button:hover {
+  color: $primary;
+  background-color: transparent !important;
 }
 
 
