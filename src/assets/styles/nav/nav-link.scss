@@ -1,28 +1,3 @@
-.active-nav-link {
-  border-bottom-style: solid !important;
-  border-bottom-color: $primaryDark !important;
-}
-
-// normal nav-link active
-.active a {
-  @extend .active-nav-link;
-  color: $primaryDark !important;
-}
-
-// dropdown nav-link active
-.active div {
-  @extend .active-nav-link;
-}
-
-.active div button {
-  color: $primaryDark !important;
-}
-
-.active div div {
-  border-bottom-style: solid !important;
-  border-bottom-color: $secondaryLight !important;
-}
-
 .nav-link {
   color: $secondary !important;
   border-bottom-style: solid !important;
@@ -55,8 +30,36 @@
   box-shadow: none !important;
 }
 
-// TODO on active set border
-.nav-link-dropdown-menu > button:hover {
-  color: $primary;
+.nav-link-dropdown-sub:hover {
+  color: $primary !important;
   background-color: transparent !important;
+}
+
+.active-nav-link {
+  color: $primaryDark !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: $primaryDark !important;
+}
+
+// normal nav-link active
+.active .nav-link {
+  @extend .active-nav-link;
+}
+
+// dropdown nav-link active
+.active .nav-link-dropdown-container {
+  @extend .active-nav-link;
+}
+
+.active .nav-link-dropdown-container .nav-link-dropdown {
+  color: $primaryDark !important;
+}
+
+// sub nav-link active
+.active-nav-link-dropdown-sub {
+  @extend .active-nav-link;
+}
+
+.active-nav-link-dropdown-sub button {
+  color: $primaryDark !important;
 }
