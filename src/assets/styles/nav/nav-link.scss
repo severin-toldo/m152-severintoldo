@@ -1,0 +1,62 @@
+.active-nav-link {
+  border-bottom-style: solid !important;
+  border-bottom-color: $primaryDark !important;
+}
+
+// normal nav-link active
+.active a {
+  @extend .active-nav-link;
+  color: $primaryDark !important;
+}
+
+// dropdown nav-link active
+.active div {
+  @extend .active-nav-link;
+}
+
+.active div button {
+  color: $primaryDark !important;
+}
+
+.active div div {
+  border-bottom-style: solid !important;
+  border-bottom-color: $secondaryLight !important;
+}
+
+.nav-link {
+  color: $secondary !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: transparent !important;
+}
+
+.nav-link:hover {
+  color: $primary !important;
+  cursor: pointer !important;
+}
+
+.abstract-nav-link-dropdown {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.nav-link-dropdown {
+  @extend .abstract-nav-link-dropdown;
+  color: $secondary !important;
+}
+
+.nav-link-dropdown:hover,
+.nav-link-dropdown:focus,
+.nav-link-dropdown:active,
+.nav-link-dropdown.active,
+.open > .dropdown-toggle .nav-link-dropdown {
+  @extend .abstract-nav-link-dropdown;
+  color: $primary !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+// TODO on active set border
+.nav-link-dropdown-menu > button:hover {
+  color: $primary;
+  background-color: transparent !important;
+}

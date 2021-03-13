@@ -1,0 +1,10 @@
+@import 'src/assets/styles/variables';
+
+.navbar {
+  border-bottom-style: solid !important;
+  border-bottom-color: $secondaryLight !important;
+}
+
+.navbar-brand {
+  margin: 0 !important;
+}
