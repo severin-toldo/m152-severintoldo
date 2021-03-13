@@ -41,12 +41,12 @@
   border-bottom-color: $primaryDark !important;
 }
 
-// normal nav-link active
+/* normal nav-link active */
 .active .nav-link {
   @extend .active-nav-link;
 }
 
-// dropdown nav-link active
+/* dropdown nav-link active */
 .active .nav-link-dropdown-container {
   @extend .active-nav-link;
 }
@@ -55,7 +55,7 @@
   color: $primaryDark !important;
 }
 
-// sub nav-link active
+/* sub nav-link active */
 .active-nav-link-dropdown-sub {
   @extend .active-nav-link;
 }
