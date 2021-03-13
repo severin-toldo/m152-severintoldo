@@ -1,10 +1,13 @@
 <li [class.active]="isNavLinkActive(navLink)" class="nav-item">
   <ng-container *ngIf="hasSubs">
-    <app-dropdown [label]="navLink.text"
-                  [customClass]="'nav-link-dropdown'"
-                  [customMenuClass]="'nav-link-dropdown-menu'"
-                  [selectOptions]="navLinksToSelectOptions(navLink.subs)"
-                  (onSelect)="onNavLinkClicked($event.value)"></app-dropdown>
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn nav-link-dropdown" ngbDropdownToggle>{{ navLink.text | translate }}</button>
+      <div class="nav-link-dropdown-menu" ngbDropdownMenu>
+        <button *ngFor="let sub of navLink.subs"
+                (click)="onNavLinkClicked(sub)"
+                ngbDropdownItem>{{ sub.text | translate }}</button>
+      </div>
+    </div>
   </ng-container>
   <ng-container *ngIf="!hasSubs">
     <a (click)="onNavLinkClicked(navLink)" class="nav-link">

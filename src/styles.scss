@@ -36,10 +36,29 @@ $theme-colors: (
   margin: 0 !important;
 }
 
-.active a {
-  color: $primaryDark !important;
+.active-nav-link {
   border-bottom-style: solid !important;
   border-bottom-color: $primaryDark !important;
+}
+
+// normal nav-link active
+.active a {
+  @extend .active-nav-link;
+  color: $primaryDark !important;
+}
+
+// dropdown nav-link active
+.active div {
+  @extend .active-nav-link;
+}
+
+.active div button {
+  color: $primaryDark !important;
+}
+
+.active div div {
+  border-bottom-style: solid !important;
+  border-bottom-color: $secondaryLight !important;
 }
 
 .nav-link {

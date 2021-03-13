@@ -22,7 +22,7 @@ export class NavLinkComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.hasSubs = this.navLink.subs && this.navLink.subs.length !== 0;
+    this.hasSubs = this.hasNavLinkSubs(this.navLink);
   }
 
   public onNavLinkClicked(navLink: NavLink): void {
@@ -30,12 +30,28 @@ export class NavLinkComponent implements OnInit {
     this.router.navigate(navLink.route);
   }
 
-  public isNavLinkActive(navLink: NavLink): boolean {
-    return navLink.route && navLink.route[0] === getCurrentRoute();
-  }
-
   public navLinksToSelectOptions(navLinks: NavLink[]): SelectOption[] {
     return navLinks.map(n => new SelectOption(n.text, n));
   }
 
+  public isNavLinkActive(navLink: NavLink): boolean {
+    if (this.hasNavLinkSubs(navLink)) {
+      return this.isNavLinkSubActive(navLink)
+    }
+
+    return this.isNavLinkRouteCurrentRoute(navLink);
+  }
+
+  private isNavLinkSubActive(navLink: NavLink): boolean {
+    const foundNavLink = navLink.subs.filter(n => this.isNavLinkRouteCurrentRoute(n));
+    return foundNavLink && foundNavLink.length > 0;
+  }
+
+  private hasNavLinkSubs(navLink: NavLink): boolean {
+    return navLink.subs && navLink.subs.length !== 0;
+  }
+
+  private isNavLinkRouteCurrentRoute(navLink: NavLink): boolean {
+    return navLink.route && navLink.route[0] === getCurrentRoute();
+  }
 }
