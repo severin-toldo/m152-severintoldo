@@ -89,5 +89,20 @@ input[type="checkbox"], input[type="radio"] {
   filter: hue-rotate(140deg);
 }
 
+
+/*
+  Accordions
+*/
+.btn-link {
+  outline: none !important;
+  box-shadow: none !important;
+  color: $secondary !important;
+  text-decoration: none !important;
+}
+
+.btn-link:hover {
+  color: $primary !important;
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
