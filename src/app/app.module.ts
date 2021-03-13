@@ -20,6 +20,8 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import { ContentComponent } from './components/content/content.component';
 import {FeatherModule} from "angular-feather";
 import {Menu} from "angular-feather/icons";
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { NavLinkComponent } from './components/nav/nav-link/nav-link.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -37,6 +39,8 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     NavComponent,
     HomeComponent,
     ContentComponent,
+    DropdownComponent,
+    NavLinkComponent,
   ],
   imports: [
     BrowserModule,
