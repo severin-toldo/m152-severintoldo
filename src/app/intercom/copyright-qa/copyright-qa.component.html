@@ -1,6 +1,6 @@
 <app-content [title]="'INTERCOM.COPYRIGHT.COPYRIGHT_QA.TITLE'">
   <ngb-accordion>
-    <ngb-panel *ngFor="let key of questionsAndAnswers | keyvalue"
+    <ngb-panel *ngFor="let key of questionsAndAnswers | defaultOrderKeyvalue"
                [title]="key.key">
       <ng-template ngbPanelContent>
         <div class="ml-3" [innerHTML]="key.value"></div>

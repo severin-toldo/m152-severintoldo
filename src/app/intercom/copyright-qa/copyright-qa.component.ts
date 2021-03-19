@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {KeyValue} from "@angular/common";
 
 @Component({
   selector: 'app-copyright-qa',
@@ -13,6 +14,8 @@ export class CopyrightQAComponent implements OnInit {
   }
 
   public ngOnInit(): void {
+    this.questionsAndAnswers.set('Was ist "public domain"?', 'Wenn jemand auf sein Urheberrecht an einem Werk verzichtet wird dieses Teil der «public domain». Es kann dann frei und ohne Bedingungen genutzt werden.');
+    this.questionsAndAnswers.set('Was ist "fair use"?', '«Fair use» erlaubt die Nutzung eines urheberrechtsgeschützten Werkes solange sie der öffentlichen Bildung und der Anregung geistiger Produktionen dienen.');
     this.questionsAndAnswers.set('Wird ein Impressum vorgeschrieben?', 'Ja, in der Schweiz gilt eine Impressumspflicht (Siehe Gesetz gegen den unlauteren Wettbewerb (UWG))');
     this.questionsAndAnswers.set('Wie kann ich mein Geistiges Eigentum schützen?', 'Gewerblichen Schutzrechte wie Marken, Patente, Designs sowie das Urheberrecht');
     this.questionsAndAnswers.set('Was gibt es für Schutzkriterien?', 'Das Werk muss eine geistige Schöpfung sein und muss individuellen Charakter besitzen.');
@@ -28,8 +31,6 @@ export class CopyrightQAComponent implements OnInit {
     this.questionsAndAnswers.set('Was sind und bedeuten Copyrights im Internet?', 'Copyright wird meist mit dem Urheberrecht gleichgesetzt. Das Urheberrecht schützt den Erfinder eines Werkes einschließlich seiner wirtschaftlichen und ideellen Rechte. Im Internet jedoch wird das Copyright oft verletzt. Zum Beispiel Die EU will dagegen mit dem umstrittenen Artikel 13 vorgehen.');
     this.questionsAndAnswers.set('Was sind und bedeuten Lizenzen im Internet', 'Eine Lizenz ist eine Rechtskräftige Erlaubnis ein Werk nutzen zu dürfen. Einige Lizenzen erlauben auch die kommerzielle Nutzung. Bekannte Beispiele für Lizenzen sind die Creative Commons-, GNU GPL- oder MIT-Lizenz.');
     this.questionsAndAnswers.set('Wer hat welche Copyrights auf meinem Internetauftritt?', 'Zurzeit sind alle Inhalte selbst produziert.');
-    this.questionsAndAnswers.set('Was ist "public domain"?', 'Wenn jemand auf sein Urheberrecht an einem Werk verzichtet wird dieses Teil der «public domain». Es kann dann frei und ohne Bedingungen genutzt werden.');
-    this.questionsAndAnswers.set('Was ist "fair use"?', '«Fair use» erlaubt die Nutzung eines urheberrechtsgeschützten Werkes solange sie der öffentlichen Bildung und der Anregung geistiger Produktionen dienen.');
   }
 }
 

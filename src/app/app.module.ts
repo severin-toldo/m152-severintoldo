@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TemplateExampleComponent } from './components/template-example/template-example.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToasterModule} from "angular2-toaster";
 import { CookieWarningComponent } from './components/cookie-warning/cookie-warning.component';
@@ -21,6 +20,7 @@ import { ContentComponent } from './components/content/content.component';
 import {FeatherModule} from "angular-feather";
 import {Menu} from "angular-feather/icons";
 import { NavLinkComponent } from './components/nav/nav-link/nav-link.component';
+import { DefaultOrderKeyvaluePipe } from './components/default-order-keyvalue.pipe';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -30,7 +30,6 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @NgModule({
   declarations: [
     AppComponent,
-    TemplateExampleComponent,
     CookieWarningComponent,
     CopyrightQAComponent,
     DsgvoComponent,
@@ -39,6 +38,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     HomeComponent,
     ContentComponent,
     NavLinkComponent,
+    DefaultOrderKeyvaluePipe,
   ],
   imports: [
     BrowserModule,
