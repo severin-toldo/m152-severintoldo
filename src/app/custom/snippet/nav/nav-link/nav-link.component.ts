@@ -1,8 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {NavLink} from "../../../model/nav-link.model";
-import {getCurrentRoute} from "../../../shared/other.util";
+import {NavLink} from "../../../../model/nav-link.model";
+import {getCurrentRoute} from "../../../../shared/other.util";
 import {Router} from "@angular/router";
-import {SelectOption} from "../../../model/select-option.model";
+import {SelectOption} from "../../../../model/select-option.model";
 
 @Component({
   selector: 'app-nav-link',

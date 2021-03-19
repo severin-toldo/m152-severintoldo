@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {KeyValue} from "@angular/common";
 
 @Component({
   selector: 'app-copyright-qa',

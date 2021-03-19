@@ -8,11 +8,11 @@ import {
   OnInit,
   ViewChild
 } from '@angular/core';
-import {NavLink} from "../../model/nav-link.model";
-import {NavService} from "../../service/nav.service";
-import {homeRoute} from "../../shared/routes";
+import {NavLink} from "../../../model/nav-link.model";
+import {NavService} from "../../../service/nav.service";
+import {homeRoute} from "../../../shared/routes";
 import {Router} from "@angular/router";
-import {getCssProperty} from "../../shared/other.util";
+import {getCssProperty} from "../../../shared/other.util";
 
 
 @Component({

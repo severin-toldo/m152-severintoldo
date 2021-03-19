@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from "./intercom/home/home.component";
-import {CopyrightQAComponent} from "./intercom/copyright-qa/copyright-qa.component";
-import {DsgvoComponent} from "./intercom/dsgvo/dsgvo.component";
+import {CopyrightQAComponent} from "./intercom/copyright/copyright-qa/copyright-qa.component";
+import {DsgvoComponent} from "./intercom/copyright/dsgvo/dsgvo.component";
 import {ImprintComponent} from "./intercom/imprint/imprint.component";
 
 const routes: Routes = [
