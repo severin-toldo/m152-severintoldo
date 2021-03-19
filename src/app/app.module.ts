@@ -21,6 +21,9 @@ import {FeatherModule} from "angular-feather";
 import {Menu} from "angular-feather/icons";
 import { NavLinkComponent } from './custom/snippet/nav/nav-link/nav-link.component';
 import { DefaultOrderKeyvaluePipe } from './custom/pipe/default-order-keyvalue.pipe';
+import { FileFormatsImageComponent } from './intercom/file-formats/file-formats-image/file-formats-image.component';
+import { FileFormatsVideoComponent } from './intercom/file-formats/file-formats-video/file-formats-video.component';
+import { FileFormatsSoundComponent } from './intercom/file-formats/file-formats-sound/file-formats-sound.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -39,6 +42,9 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ContentComponent,
     NavLinkComponent,
     DefaultOrderKeyvaluePipe,
+    FileFormatsImageComponent,
+    FileFormatsVideoComponent,
+    FileFormatsSoundComponent,
   ],
   imports: [
     BrowserModule,

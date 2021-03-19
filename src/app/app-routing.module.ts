@@ -4,6 +4,9 @@ import {HomeComponent} from "./intercom/home/home.component";
 import {CopyrightQAComponent} from "./intercom/copyright/copyright-qa/copyright-qa.component";
 import {DsgvoComponent} from "./intercom/copyright/dsgvo/dsgvo.component";
 import {ImprintComponent} from "./intercom/imprint/imprint.component";
+import {FileFormatsImageComponent} from "./intercom/file-formats/file-formats-image/file-formats-image.component";
+import {FileFormatsVideoComponent} from "./intercom/file-formats/file-formats-video/file-formats-video.component";
+import {FileFormatsSoundComponent} from "./intercom/file-formats/file-formats-sound/file-formats-sound.component";
 
 const routes: Routes = [
   {
@@ -15,6 +18,11 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     data: {title: 'Home'},
+  },
+  {
+    path: 'imprint',
+    component: ImprintComponent,
+    data: {title: 'INTERCOM.IMPRINT.TITLE'},
   },
   {
     path: 'copyright',
@@ -32,10 +40,25 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'imprint',
-    component: ImprintComponent,
-    data: {title: 'INTERCOM.IMPRINT.TITLE'},
-  }
+    path: 'file-formats',
+    children: [
+      {
+        path: 'image',
+        component: FileFormatsImageComponent,
+        data: {title: 'INTERCOM.FILE_FORMATS.IMAGE.TITLE'},
+      },
+      {
+        path: 'video',
+        component: FileFormatsVideoComponent,
+        data: {title: 'INTERCOM.FILE_FORMATS.VIDEO.TITLE'},
+      },
+      {
+        path: 'sound',
+        component: FileFormatsSoundComponent,
+        data: {title: 'INTERCOM.FILE_FORMATS.SOUND.TITLE'},
+      }
+    ],
+  },
 ];
 
 @NgModule({
