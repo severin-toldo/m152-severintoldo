@@ -1,0 +1,11 @@
+<div class="card text-center">
+  <div class="card-header">
+    <h3><b>{{ title | translate }}</b></h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let comparisonCategory of comparisonCategories" class="list-group-item">
+      <h5 class="">{{ comparisonCategory.title | translate }}</h5>
+      <p *ngFor="let item of comparisonCategory.items">{{ item | translate }}</p>
+    </li>
+  </ul>
+</div>

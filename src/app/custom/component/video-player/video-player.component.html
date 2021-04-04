@@ -1,0 +1,17 @@
+<video *ngIf="!alert"
+       [src]="src"
+       [poster]="thumbnail"
+       (error)="onError()"
+       (loadeddata)="onDataLoaded()"
+       class="rounded video-player"
+       controls></video>
+<div *ngIf="alert"
+     class="video-player-alert alert alert-danger text-center">
+  <br>
+  <i-feather class="video-player-alert-icon" name="alert-triangle"></i-feather>
+  <br/>
+  <br/>
+  <b>{{ alert.title | translate }}</b>
+  <br/>
+  <small [innerHTML]="alert.body | translate"></small>
+</div>

@@ -65,6 +65,10 @@
         "SAVE_SETTINGS": "Meine Einstellungen speichern",
         "CONSENT_ALL": "Allen Zustimmen"
       }
+    },
+    "VIDEO_PLAYER": {
+      "UNSUPPORTED_FORMAT_ALERT_TITLE": "Ihr Browser unterstützt dieses Video-Format nicht.",
+      "UNSUPPORTED_FORMAT_ALERT_BODY": "Bitte nutzen Sie <a target=\"_blank\" class=\"text-primary\" href=\"https://www.google.de/chrome/?brand=LRNT&gclid=CjwKCAjwx6WDBhBQEiwA_dP8rToUCxuDS6d8rFSAheBxC3W561vbnwltqP-eJ8cDznyGuSDYKbFsaxoCsdEQAvD_BwE&gclsrc=aw.ds\">Google Chrome</a>."
     }
   }
 }

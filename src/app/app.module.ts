@@ -18,12 +18,14 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import { ContentComponent } from './custom/component/content/content.component';
 import {FeatherModule} from "angular-feather";
-import {Menu} from "angular-feather/icons";
+import {AlertTriangle, Menu} from "angular-feather/icons";
 import { NavLinkComponent } from './custom/snippet/nav/nav-link/nav-link.component';
 import { DefaultOrderKeyvaluePipe } from './custom/pipe/default-order-keyvalue.pipe';
 import { FileFormatsImageComponent } from './intercom/file-formats/file-formats-image/file-formats-image.component';
 import { FileFormatsVideoComponent } from './intercom/file-formats/file-formats-video/file-formats-video.component';
 import { FileFormatsSoundComponent } from './intercom/file-formats/file-formats-sound/file-formats-sound.component';
+import { ComparisonCardListComponent } from './custom/component/comparison-card-list/comparison-card-list.component';
+import { VideoPlayerComponent } from './custom/component/video-player/video-player.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -45,6 +47,8 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     FileFormatsImageComponent,
     FileFormatsVideoComponent,
     FileFormatsSoundComponent,
+    ComparisonCardListComponent,
+    VideoPlayerComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,8 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       },
     }),
     FeatherModule.pick({
-      Menu
+      Menu,
+      AlertTriangle
     })
   ],
   providers: [],
