@@ -12,4 +12,8 @@ export class FileFormatsVideoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public handleError(): void {
+    console.log('hello');
+  }
+
 }
