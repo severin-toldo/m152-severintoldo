@@ -1,32 +1,28 @@
-<br>
-<div style="width: 320px; height: 240px">
-  <app-video-player [src]="'/assets/videos/movie.mkv'"></app-video-player>
-</div>
-
-<!--<app-comparison-card-list [title]="'Main title'"></app-comparison-card-list>-->
-
-
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-TODO replace AVI comaprssion with ogg!!
-TODO go through assigments again, just double check
-mp4:<br/>
-<video width="320" height="240" src="/assets/videos/movie.mp4" controls></video>
-
-mkv:<br/>
-<video width="320" height="240" src="/assets/videos/movie.mkv" (error)="handleError()" controls></video>
-
-mov:<br/>
-<video width="320" height="240" src="/assets/videos/movie.mov" controls></video>
-
-webm:<br/>
-<video width="320" height="240" src="/assets/videos/movie.webm" controls></video>
+<app-content [title]="'INTERCOM.FILE_FORMATS.VIDEO.TITLE'">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="pb-5">
+        <app-video-player [src]="MP4_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>
+        <app-comparison-card-list [title]="'MP4'" [comparisonCategories]="MP4_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="pb-5">
+        <app-video-player [src]="MKV_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>
+        <app-comparison-card-list [title]="'MKV'" [comparisonCategories]="MKV_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="pb-5">
+        <app-video-player [src]="MOV_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>
+        <app-comparison-card-list [title]="'MOV'" [comparisonCategories]="MOV_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="pb-5">
+        <app-video-player [src]="WEBM_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>
+        <app-comparison-card-list [title]="'WebM'" [comparisonCategories]="WEBM_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+  </div>
+</app-content>

@@ -5,7 +5,11 @@
   <ul class="list-group list-group-flush">
     <li *ngFor="let comparisonCategory of comparisonCategories" class="list-group-item">
       <h5 class="">{{ comparisonCategory.title | translate }}</h5>
-      <p *ngFor="let item of comparisonCategory.items">{{ item | translate }}</p>
+      <ng-container *ngFor="let item of comparisonCategory.items">
+        <p *ngIf="item">{{ item | translate }}</p>
+        <p *ngIf="!item">&nbsp;</p>
+      </ng-container>
+
     </li>
   </ul>
 </div>
