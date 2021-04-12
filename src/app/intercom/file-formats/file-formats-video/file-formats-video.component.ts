@@ -47,7 +47,7 @@ export class FileFormatsVideoComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Klein'];
+    size.items = ['Klein (24.5 MB)'];
 
     const quality = new ComparisonCategory();
     quality.title = 'Qualität';
@@ -79,7 +79,7 @@ export class FileFormatsVideoComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Klein'];
+    size.items = ['Klein (24.4 KB)'];
 
     const quality = new ComparisonCategory();
     quality.title = 'Qualität';
@@ -111,7 +111,7 @@ export class FileFormatsVideoComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Klein'];
+    size.items = ['Klein (24.5 MB)'];
 
     const quality = new ComparisonCategory();
     quality.title = 'Qualität';
@@ -143,7 +143,7 @@ export class FileFormatsVideoComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Gering'];
+    size.items = ['Gering (11.9 MB)'];
 
     const quality = new ComparisonCategory();
     quality.title = 'Qualität';

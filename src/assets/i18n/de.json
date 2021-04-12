@@ -46,7 +46,11 @@
         "TITLE": "Bild"
       },
       "VIDEO": {
-        "TITLE": "Video"
+        "TITLE": "Video",
+        "MP4": "MP4",
+        "MKV": "MKV",
+        "MOV": "MOV",
+        "WebM": "WebM"
       },
       "SOUND": {
         "TITLE": "Ton"
