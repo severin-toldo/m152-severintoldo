@@ -43,7 +43,12 @@
     "FILE_FORMATS": {
       "TITLE": "Dateiformate",
       "IMAGE": {
-        "TITLE": "Bild"
+        "TITLE": "Bild",
+        "JPEG": "JPEG",
+        "JPEG_LQ": "JPEG (Low-Res)",
+        "BMP": "BMP",
+        "PNG": "PNG-8",
+        "GIF": "GIF"
       },
       "VIDEO": {
         "TITLE": "Video",

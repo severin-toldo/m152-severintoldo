@@ -26,6 +26,9 @@ import { FileFormatsVideoComponent } from './intercom/file-formats/file-formats-
 import { FileFormatsSoundComponent } from './intercom/file-formats/file-formats-sound/file-formats-sound.component';
 import { ComparisonCardListComponent } from './custom/component/comparison-card-list/comparison-card-list.component';
 import { VideoPlayerComponent } from './custom/component/video-player/video-player.component';
+import { ImageViewerComponent } from './custom/component/image-viewer/image-viewer.component';
+import { ImageViewerModalComponent } from './custom/component/image-viewer/image-viewer-modal/image-viewer-modal.component';
+import {ModalModule} from "ngx-bootstrap/modal";
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -49,6 +52,8 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     FileFormatsSoundComponent,
     ComparisonCardListComponent,
     VideoPlayerComponent,
+    ImageViewerComponent,
+    ImageViewerModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +62,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     BrowserAnimationsModule,
     NgbCollapseModule,
     ToasterModule.forRoot(),
+    ModalModule.forRoot(),
     NgbModule,
     ReactiveFormsModule,
     TranslateModule.forRoot({

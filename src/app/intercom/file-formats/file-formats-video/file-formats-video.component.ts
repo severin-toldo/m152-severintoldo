@@ -28,7 +28,7 @@ export class FileFormatsVideoComponent implements OnInit {
   public ngOnInit(): void {
   }
 
-  public getMp4ComparisonCategories(): ComparisonCategory[] {
+  private getMp4ComparisonCategories(): ComparisonCategory[] {
     const meaning = new ComparisonCategory();
     meaning.title = 'Bedeutung';
     meaning.items = ['Moving Pictures Experts Group'];
@@ -60,7 +60,7 @@ export class FileFormatsVideoComponent implements OnInit {
     return [meaning, advantages, disadvantages, usage, size, quality, fileExtension];
   }
 
-  public getMkvComparisonCategories(): ComparisonCategory[] {
+  private getMkvComparisonCategories(): ComparisonCategory[] {
     const meaning = new ComparisonCategory();
     meaning.title = 'Bedeutung';
     meaning.items = ['Matroska'];
@@ -92,7 +92,7 @@ export class FileFormatsVideoComponent implements OnInit {
     return [meaning, advantages, disadvantages, usage, size, quality, fileExtension];
   }
 
-  public getMovComparisonCategories(): ComparisonCategory[] {
+  private getMovComparisonCategories(): ComparisonCategory[] {
     const meaning = new ComparisonCategory();
     meaning.title = 'Bedeutung';
     meaning.items = ['Movie / Quicktime'];
@@ -124,7 +124,7 @@ export class FileFormatsVideoComponent implements OnInit {
     return [meaning, advantages, disadvantages, usage, size, quality, fileExtension];
   }
 
-  public getWebmComparisonCategories(): ComparisonCategory[] {
+  private getWebmComparisonCategories(): ComparisonCategory[] {
     const meaning = new ComparisonCategory();
     meaning.title = 'Bedeutung';
     meaning.items = ['Operation Good Guys'];

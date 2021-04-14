@@ -1,1 +1,48 @@
-<p>file-formats-image works!</p>
+<app-content [title]="'INTERCOM.FILE_FORMATS.IMAGE.TITLE'">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="pb-5">
+<!--        TODO gallery to support multiple images-->
+        <app-image-viewer [title]="'My cool title'"
+                          [thumbnail]="'/assets/images/test1.jpg'"
+                          [src]="'/assets/images/test2.jpg'"></app-image-viewer>
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.JPEG'"
+                                  [comparisonCategories]="JPEG_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+<!--        <app-video-player [src]="MKV_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.JPEG_LQ'"
+                                  [comparisonCategories]="JPEG_LQ__COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+<!--        <app-video-player [src]="MOV_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.BMP'"
+                                  [comparisonCategories]="BMP_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <!--        <app-video-player [src]="WEBM_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.PNG'"
+                                  [comparisonCategories]="PNG_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <!--        <app-video-player [src]="WEBM_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.GIF'"
+                                  [comparisonCategories]="GIF_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </div>
+</app-content>

@@ -1,0 +1,8 @@
+<div class="pb-2">
+  <img [src]="thumbnail"
+       [alt]="title"
+       (loadeddata)="onDataLoaded()"
+       (click)="openImageViewerModal()"
+       class="w-100 rounded">
+</div>
+
