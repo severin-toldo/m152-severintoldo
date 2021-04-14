@@ -29,6 +29,7 @@ import { VideoPlayerComponent } from './custom/component/video-player/video-play
 import { ImageViewerComponent } from './custom/component/image-viewer/image-viewer.component';
 import { ImageViewerModalComponent } from './custom/component/image-viewer/image-viewer-modal/image-viewer-modal.component';
 import {ModalModule} from "ngx-bootstrap/modal";
+import {CarouselModule} from "ngx-bootstrap/carousel";
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -63,6 +64,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     NgbCollapseModule,
     ToasterModule.forRoot(),
     ModalModule.forRoot(),
+    CarouselModule.forRoot(),
     NgbModule,
     ReactiveFormsModule,
     TranslateModule.forRoot({

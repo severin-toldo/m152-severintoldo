@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {BsModalService} from "ngx-bootstrap/modal";
 import {ImageViewerModalComponent} from "./image-viewer-modal/image-viewer-modal.component";
+import {ImageViewerImage} from "../../../model/image-viewer-image.model";
 
 @Component({
   selector: 'app-image-viewer',
@@ -9,12 +10,7 @@ import {ImageViewerModalComponent} from "./image-viewer-modal/image-viewer-modal
 })
 export class ImageViewerComponent implements OnInit {
 
-  @Input() public title: string;
-  @Input() public src: string;
-  @Input() public thumbnail: string;
-
-  @Output() public onImageLoaded = new EventEmitter<void>();
-
+  @Input() public images: ImageViewerImage[];
 
   constructor(private bsModalService: BsModalService) {
   }
@@ -22,14 +18,9 @@ export class ImageViewerComponent implements OnInit {
   public ngOnInit(): void {
   }
 
-  public openImageViewerModal() {
+  public openImageViewerModal(image: ImageViewerImage) {
     const modalRef = this.bsModalService.show(ImageViewerModalComponent, {class: 'modal-lg'});
-    modalRef.content.title = this.title;
-    modalRef.content.src = this.src;
+    modalRef.content.title = image.title;
+    modalRef.content.src = image.src;
   }
-
-  public onDataLoaded() {
-    this.onImageLoaded.emit();
-  }
-
 }

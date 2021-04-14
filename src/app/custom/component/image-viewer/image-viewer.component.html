@@ -1,8 +1,10 @@
 <div class="pb-2">
-  <img [src]="thumbnail"
-       [alt]="title"
-       (loadeddata)="onDataLoaded()"
-       (click)="openImageViewerModal()"
-       class="w-100 rounded image-viewer-image">
+  <carousel [interval]="0">
+    <slide *ngFor="let image of images">
+      <img [src]="image.thumbnail"
+           [alt]="image.title"
+           (click)="openImageViewerModal(image)"
+           class="w-100 rounded image-viewer-image">
+    </slide>
+  </carousel>
 </div>
-
