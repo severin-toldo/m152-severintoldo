@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ComparisonCategory} from "../../../model/comparison-category.model";
-import {EMPTY_VALUE} from "../../../shared/other.util";
+import {ImageViewerImage} from "../../../model/image-viewer-image.model";
 
 @Component({
   selector: 'app-file-formats-image',
@@ -9,21 +9,16 @@ import {EMPTY_VALUE} from "../../../shared/other.util";
 })
 export class FileFormatsImageComponent implements OnInit {
 
-  // TODO add actual sizes  ex. (15MB, 17MB)
-  // TODO image viewer
-
-  // public readonly THUMBNAIL_PATH = '/assets/images/thumbnails/video-thumbnail.png';
-
-  public readonly JPEG_VIDEO_PATH = "/assets/videos/movie.mp4";
-  public readonly JPEG_LQ_VIDEO_PATH = "/assets/videos/movie.mkv";
-  public readonly BMP_VIDEO_PATH = "/assets/videos/movie.mov";
-  public readonly PNG_VIDEO_PATH = "/assets/videos/movie.webm";
-  public readonly GIF_VIDEO_PATH = "/assets/videos/movie.webm";
+  public readonly JPEG_IMAGES = this.getJpgImages();
+  public readonly JPEG_LQ_IMAGES = this.getJpgLqImages();
+  public readonly BMP_IMAGES = this.getBmpImages();
+  public readonly PNG_IMAGES = this.getPngImages();
+  public readonly GIF_IMAGES = this.getGifImages();
 
   public readonly JPEG_COMPARISON_CATEGORIES = this.getJpegComparisonCategories();
   public readonly JPEG_LQ__COMPARISON_CATEGORIES = this.getJpegLqComparisonCategories();
   public readonly BMP_COMPARISON_CATEGORIES = this.getBmpComparisonCategories();
-  public readonly PNG_COMPARISON_CATEGORIES = this.getPngComparisonCategories()
+  public readonly PNG_COMPARISON_CATEGORIES = this.getPngComparisonCategories();
   public readonly GIF_COMPARISON_CATEGORIES = this.getGifComparisonCategories();
 
 
@@ -31,6 +26,76 @@ export class FileFormatsImageComponent implements OnInit {
   }
 
   public ngOnInit(): void {
+  }
+
+  private getJpgImages(): ImageViewerImage[] {
+    const detail = new ImageViewerImage();
+    detail.title = 'Bild 1 - Viele Details';
+    detail.src = '/assets/images/file-formats/detail.jpg';
+    detail.thumbnail = '/assets/images/thumbnails/detail_thumbnail.jpg';
+
+    const lowDetail = new ImageViewerImage();
+    lowDetail.title = 'Bild 2 - Wenige Details';
+    lowDetail.src = '/assets/images/file-formats/low_detail.jpg';
+    lowDetail.thumbnail = '/assets/images/thumbnails/low_detail_thumbnail.jpg';
+
+    return [detail, lowDetail];
+  }
+
+  private getJpgLqImages(): ImageViewerImage[] {
+    const detail = new ImageViewerImage();
+    detail.title = 'Bild 1 - Viele Details';
+    detail.src = '/assets/images/file-formats/detail_lq.jpg';
+    detail.thumbnail = '/assets/images/thumbnails/detail_thumbnail.jpg';
+
+    const lowDetail = new ImageViewerImage();
+    lowDetail.title = 'Bild 2 - Wenige Details';
+    lowDetail.src = '/assets/images/file-formats/low_detail_lq.jpg';
+    lowDetail.thumbnail = '/assets/images/thumbnails/low_detail_thumbnail.jpg';
+
+    return [detail, lowDetail];
+  }
+
+  private getBmpImages(): ImageViewerImage[] {
+    const detail = new ImageViewerImage();
+    detail.title = 'Bild 1 - Viele Details';
+    detail.src = '/assets/images/file-formats/detail.bmp';
+    detail.thumbnail = '/assets/images/thumbnails/detail_thumbnail.jpg';
+
+    const lowDetail = new ImageViewerImage();
+    lowDetail.title = 'Bild 2 - Wenige Details';
+    lowDetail.src = '/assets/images/file-formats/low_detail.bmp';
+    lowDetail.thumbnail = '/assets/images/thumbnails/low_detail_thumbnail.jpg';
+
+    return [detail, lowDetail];
+  }
+
+  private getPngImages(): ImageViewerImage[] {
+    const detail = new ImageViewerImage();
+    detail.title = 'Bild 1 - Viele Details';
+    detail.src = '/assets/images/file-formats/detail.png';
+    detail.thumbnail = '/assets/images/thumbnails/detail_thumbnail.jpg';
+
+    const lowDetail = new ImageViewerImage();
+    lowDetail.title = 'Bild 2 - Wenige Details';
+    lowDetail.src = '/assets/images/file-formats/low_detail.png';
+    lowDetail.thumbnail = '/assets/images/thumbnails/low_detail_thumbnail.jpg';
+
+    return [detail, lowDetail];
+  }
+
+  private getGifImages(): ImageViewerImage[] {
+    const detail = new ImageViewerImage();
+    detail.title = 'Bild 1 - Viele Details';
+    detail.src = '/assets/images/file-formats/detail.gif';
+    detail.thumbnail = '/assets/images/thumbnails/detail_thumbnail.jpg';
+
+    const lowDetail = new ImageViewerImage();
+    lowDetail.title = 'Bild 2 - Wenige Details';
+    lowDetail.src = '/assets/images/file-formats/low_detail.gif';
+    lowDetail.thumbnail = '/assets/images/thumbnails/low_detail_thumbnail.jpg';
+
+    return [detail, lowDetail];
   }
 
   private getJpegComparisonCategories(): ComparisonCategory[] {
@@ -56,7 +121,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Klein (TODO)'];
+    size.items = ['Klein (2.1 MB, 1.7 MB)'];
 
     const sizeReason = new ComparisonCategory();
     sizeReason.title = 'Grund der Grösse';
@@ -96,7 +161,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Gering (TODO)'];
+    size.items = ['Gering (215 KB, 162 KB)'];
 
     const sizeReason = new ComparisonCategory();
     sizeReason.title = 'Grund der Grösse';
@@ -104,7 +169,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const quality = new ComparisonCategory();
     quality.title = 'Qualität';
-    quality.items = ['Gut'];
+    quality.items = ['Ok'];
 
     const fileExtension = new ComparisonCategory();
     fileExtension.title = 'Dateiendungen';
@@ -136,7 +201,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Gross (TODO)'];
+    size.items = ['Sehr Gross (36 MB, 36 MB)'];
 
     const sizeReason = new ComparisonCategory();
     sizeReason.title = 'Grund der Grösse';
@@ -176,7 +241,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Gross (TODO)'];
+    size.items = ['Gross (7 MB, 5 MB)'];
 
     const sizeReason = new ComparisonCategory();
     sizeReason.title = 'Grund der Grösse';
@@ -216,11 +281,11 @@ export class FileFormatsImageComponent implements OnInit {
 
     const size = new ComparisonCategory();
     size.title = 'Grösse';
-    size.items = ['Gering (TODO)'];
+    size.items = ['Klein (3.9 MB, 4.6 MB)'];
 
     const sizeReason = new ComparisonCategory();
     sizeReason.title = 'Grund der Grösse';
-    sizeReason.items = ['Das GIF Format unterstützt nur wenige Farben und wenige Details. Auf Grund der mittelwertigen Qualität ist auch die Dateigrösse entsprechend gering.'];
+    sizeReason.items = ['Das GIF Format unterstützt nur wenige Farben und wenige Details. Auf Grund der mittelwertigen Qualität ist auch die Dateigrösse entsprechend klein.'];
 
     const quality = new ComparisonCategory();
     quality.title = 'Qualität';

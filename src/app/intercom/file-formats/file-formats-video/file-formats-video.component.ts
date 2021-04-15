@@ -9,12 +9,12 @@ import {EMPTY_VALUE} from "../../../shared/other.util";
 })
 export class FileFormatsVideoComponent implements OnInit {
 
-  public readonly THUMBNAIL_PATH = '/assets/images/thumbnails/video-thumbnail.png';
+  public readonly THUMBNAIL_PATH = '/assets/images/thumbnails/video_thumbnail.png';
 
-  public readonly MP4_VIDEO_PATH = "/assets/videos/movie.mp4";
-  public readonly MKV_VIDEO_PATH = "/assets/videos/movie.mkv";
-  public readonly MOV_VIDEO_PATH = "/assets/videos/movie.mov";
-  public readonly WEBM_VIDEO_PATH = "/assets/videos/movie.webm";
+  public readonly MP4_VIDEO_PATH = "/assets/videos/file-formats/movie.mp4";
+  public readonly MKV_VIDEO_PATH = "/assets/videos/file-formats/movie.mkv";
+  public readonly MOV_VIDEO_PATH = "/assets/videos/file-formats/movie.mov";
+  public readonly WEBM_VIDEO_PATH = "/assets/videos/file-formats/movie.webm";
 
   public readonly MP4_COMPARISON_CATEGORIES = this.getMp4ComparisonCategories();
   public readonly MKV_COMPARISON_CATEGORIES = this.getMkvComparisonCategories();

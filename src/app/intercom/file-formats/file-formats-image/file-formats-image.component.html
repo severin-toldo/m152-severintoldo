@@ -2,24 +2,21 @@
   <div class="row">
     <div class="col-lg-4">
       <div class="pb-5">
-<!--        TODO gallery to support multiple images-->
-        <app-image-viewer [title]="'My cool title'"
-                          [thumbnail]="'/assets/images/test1.jpg'"
-                          [src]="'/assets/images/test2.jpg'"></app-image-viewer>
+        <app-image-viewer [images]="JPEG_IMAGES"></app-image-viewer>
         <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.JPEG'"
                                   [comparisonCategories]="JPEG_COMPARISON_CATEGORIES"></app-comparison-card-list>
       </div>
     </div>
     <div class="col-lg-4">
       <div class="pb-5">
-<!--        <app-video-player [src]="MKV_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-image-viewer [images]="JPEG_LQ_IMAGES"></app-image-viewer>
         <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.JPEG_LQ'"
                                   [comparisonCategories]="JPEG_LQ__COMPARISON_CATEGORIES"></app-comparison-card-list>
       </div>
     </div>
     <div class="col-lg-4">
       <div class="pb-5">
-<!--        <app-video-player [src]="MOV_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-image-viewer [images]="BMP_IMAGES"></app-image-viewer>
         <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.BMP'"
                                   [comparisonCategories]="BMP_COMPARISON_CATEGORIES"></app-comparison-card-list>
       </div>
@@ -30,14 +27,14 @@
     </div>
     <div class="col-lg-4">
       <div class="pb-5">
-        <!--        <app-video-player [src]="WEBM_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-image-viewer [images]="PNG_IMAGES"></app-image-viewer>
         <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.PNG'"
                                   [comparisonCategories]="PNG_COMPARISON_CATEGORIES"></app-comparison-card-list>
       </div>
     </div>
     <div class="col-lg-4">
       <div class="pb-5">
-        <!--        <app-video-player [src]="WEBM_VIDEO_PATH" [thumbnail]="THUMBNAIL_PATH"></app-video-player>-->
+        <app-image-viewer [images]="GIF_IMAGES"></app-image-viewer>
         <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.IMAGE.GIF'"
                                   [comparisonCategories]="GIF_COMPARISON_CATEGORIES"></app-comparison-card-list>
       </div>

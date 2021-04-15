@@ -45,7 +45,7 @@
       "IMAGE": {
         "TITLE": "Bild",
         "JPEG": "JPEG",
-        "JPEG_LQ": "JPEG (Low-Res)",
+        "JPEG_LQ": "JPEG (LQ)",
         "BMP": "BMP",
         "PNG": "PNG-8",
         "GIF": "GIF"
