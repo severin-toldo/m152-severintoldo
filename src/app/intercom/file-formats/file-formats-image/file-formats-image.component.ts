@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ComparisonCategory} from "../../../model/comparison-category.model";
 import {ImageViewerImage} from "../../../model/image-viewer-image.model";
+import {EMPTY_VALUE} from "../../../shared/other.util";
 
 @Component({
   selector: 'app-file-formats-image',
@@ -105,7 +106,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const advantages = new ComparisonCategory();
     advantages.title = 'Vorteile';
-    advantages.items = ['Hohe Kompatibilität', 'Weit verbreitet', 'Unterstützt volles Farbenspektrum (16 Mio. Farben)', 'Unterstützt Interlacing'];
+    advantages.items = ['Hohe Kompatibilität', 'Weit verbreitet', 'Unterstützt volles Farbenspektrum (16 Mio. Farben)', 'Unterstützt Interlacing', EMPTY_VALUE];
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
@@ -145,7 +146,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const advantages = new ComparisonCategory();
     advantages.title = 'Vorteile';
-    advantages.items = ['Hohe Kompatibilität', 'Weit verbreitet', 'Unterstützt volles Farbenspektrum (16 Mio. Farben)', 'Unterstützt Interlacing'];
+    advantages.items = ['Hohe Kompatibilität', 'Weit verbreitet', 'Unterstützt volles Farbenspektrum (16 Mio. Farben)', 'Unterstützt Interlacing', EMPTY_VALUE];
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
@@ -189,11 +190,11 @@ export class FileFormatsImageComponent implements OnInit {
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
-    disadvantages.items = ['Für die meisten Zwecke Ungeeignet', 'Grosse Dateigrösse, auch nach Kompression', 'Unterstütz keine Transparenz'];
+    disadvantages.items = ['Für die meisten Zwecke Ungeeignet', 'Grosse Dateigrösse, auch nach Kompression', 'Unterstütz keine Transparenz', EMPTY_VALUE];
 
     const usage = new ComparisonCategory();
     usage.title = 'Verwendung';
-    usage.items = ['Windows OS', 'Photographie (Bilder mit hohem Detailgrad und hoher Qualität)'];
+    usage.items = ['Windows OS', 'Photographie (Bilder mit hoher Qualität)', EMPTY_VALUE];
 
     const subFormats = new ComparisonCategory();
     subFormats.title = 'Unterformate';
@@ -205,7 +206,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const sizeReason = new ComparisonCategory();
     sizeReason.title = 'Grund der Grösse';
-    sizeReason.items = ['Jeder Pixel wird mit den jeweiligen Farbwerten gespeichert. Das führt zu einer grossen Dateigrösse.'];
+    sizeReason.items = ['Jeder Pixel wird mit den jeweiligen Farbwerten gespeichert. Das führt dann zu einer grossen Dateigrösse.'];
 
     const quality = new ComparisonCategory();
     quality.title = 'Qualität';
@@ -233,7 +234,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const usage = new ComparisonCategory();
     usage.title = 'Verwendung';
-    usage.items = ['Web', 'Digitaler Transfer'];
+    usage.items = ['Web', 'Digitaler Transfer', EMPTY_VALUE];
 
     const subFormats = new ComparisonCategory();
     subFormats.title = 'Unterformate';
@@ -265,7 +266,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const advantages = new ComparisonCategory();
     advantages.title = 'Vorteile';
-    advantages.items = ['Verlustfreihe Kompression', 'Unterstützt Interlacing', 'Unterstützt Animationen', 'Unterstützt Transparenz'];
+    advantages.items = ['Verlustfreihe Kompression', 'Unterstützt Interlacing', 'Unterstützt Animationen', 'Unterstützt Transparenz', EMPTY_VALUE];
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
