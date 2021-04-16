@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/bootstrap';
+
+.audio-player {
+  width: 100%;
+  outline: none;
+}
+
+.audio-player-icon {
+  width: 20rem;
+  height: 20rem;
+}
+
+.audio-player-icon:hover {
+  cursor: pointer;
+  color: $secondary;
+}
+
+.audio-player-alert {
+  width: 100%;
+}
+
+.audio-player-alert-icon {
+  width: 3rem;
+  height: 3rem;
+}

@@ -18,7 +18,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import { ContentComponent } from './custom/component/content/content.component';
 import {FeatherModule} from "angular-feather";
-import {AlertTriangle, Menu} from "angular-feather/icons";
+import {AlertTriangle, Menu, Volume2} from "angular-feather/icons";
 import { NavLinkComponent } from './custom/snippet/nav/nav-link/nav-link.component';
 import { DefaultOrderKeyvaluePipe } from './custom/pipe/default-order-keyvalue.pipe';
 import { FileFormatsImageComponent } from './intercom/file-formats/file-formats-image/file-formats-image.component';
@@ -30,6 +30,7 @@ import { ImageViewerComponent } from './custom/component/image-viewer/image-view
 import { ImageViewerModalComponent } from './custom/component/image-viewer/image-viewer-modal/image-viewer-modal.component';
 import {ModalModule} from "ngx-bootstrap/modal";
 import {CarouselModule} from "ngx-bootstrap/carousel";
+import { AudioPlayerComponent } from './custom/component/audio-player/audio-player.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -55,6 +56,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     VideoPlayerComponent,
     ImageViewerComponent,
     ImageViewerModalComponent,
+    AudioPlayerComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,8 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     }),
     FeatherModule.pick({
       Menu,
-      AlertTriangle
+      AlertTriangle,
+      Volume2
     })
   ],
   providers: [],

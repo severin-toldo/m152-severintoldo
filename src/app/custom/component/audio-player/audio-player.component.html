@@ -1,0 +1,24 @@
+<div class="text-center">
+  <i-feather (click)="playAudio()"
+             class="audio-player-icon"
+             name="volume-2"></i-feather>
+  <br/>
+  <audio *ngIf="!alert"
+         #audioPlayer
+         class="audio-player"
+         controls>
+    <source [src]="src"
+            (error)="onError()"
+            (loadeddata)="onDataLoaded()">
+  </audio>
+</div>
+<div *ngIf="alert"
+     class="audio-player-alert alert alert-danger text-center">
+  <br>
+  <i-feather class="audio-player-alert-icon" name="alert-triangle"></i-feather>
+  <br/>
+  <br/>
+  <b>{{ alert.title | translate }}</b>
+  <br/>
+  <small [innerHTML]="alert.body | translate"></small>
+</div>
