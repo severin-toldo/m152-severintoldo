@@ -110,7 +110,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
-    disadvantages.items = ['Unterstützt keine Ebenen', 'Unterstütz keine Transparenz', 'Unterstütz keine Animationen', 'Verlustbehaftete Kompression'];
+    disadvantages.items = ['Unterstützt keine Ebenen', 'Unterstützt keine Transparenz', 'Unterstütz keine Animationen', 'Verlustbehaftete Kompression'];
 
     const usage = new ComparisonCategory();
     usage.title = 'Verwendung';
@@ -150,7 +150,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
-    disadvantages.items = ['Unterstützt keine Ebenen', 'Unterstütz keine Transparenz', 'Unterstütz keine Animationen', 'Verlustbehaftete Kompression'];
+    disadvantages.items = ['Unterstützt keine Ebenen', 'Unterstützt keine Transparenz', 'Unterstütz keine Animationen', 'Verlustbehaftete Kompression'];
 
     const usage = new ComparisonCategory();
     usage.title = 'Verwendung';
@@ -270,7 +270,7 @@ export class FileFormatsImageComponent implements OnInit {
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
-    disadvantages.items = ['Unterstütz nur 256 Farben', 'Nicht für Detaillierte Bilder geeignet'];
+    disadvantages.items = ['Unterstützt nur 256 Farben', 'Nicht für Detaillierte Bilder geeignet'];
 
     const usage = new ComparisonCategory();
     usage.title = 'Verwendung';

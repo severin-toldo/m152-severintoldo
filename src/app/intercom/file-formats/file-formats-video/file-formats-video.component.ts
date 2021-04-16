@@ -71,7 +71,7 @@ export class FileFormatsVideoComponent implements OnInit {
 
     const disadvantages = new ComparisonCategory();
     disadvantages.title = 'Nachteile';
-    disadvantages.items = ['Kein Standardformat', 'Nicht weitverbreitet', 'Wenige Programme zur Bearbeitung vorhanden', 'Wird im Web nicht von allen Browsern unterstütz'];
+    disadvantages.items = ['Kein Standardformat', 'Nicht weit verbreitet', 'Wenige Programme zur Bearbeitung vorhanden', 'Wird im Web nicht von allen Browsern unterstütz'];
 
     const usage = new ComparisonCategory();
     usage.title = 'Verwendung';
