@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import {NavLink} from "../../../model/nav-link.model";
 import {NavService} from "../../../service/nav.service";
-import {homeRoute} from "../../../shared/routes";
+import {homeRoute, sitemapRoute} from "../../../shared/routes";
 import {Router} from "@angular/router";
 import {getCssProperty} from "../../../shared/other.util";
 
@@ -27,6 +27,8 @@ export class NavComponent implements OnInit, AfterViewChecked {
   public isNavbarCollapsed = false;
 
   public readonly homeRoute = homeRoute();
+  public readonly sitemapRoute = sitemapRoute();
+
 
   @ViewChild('navbarToggler') navbarToggler: ElementRef;
 

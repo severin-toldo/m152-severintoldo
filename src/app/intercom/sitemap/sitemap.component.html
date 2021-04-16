@@ -1,0 +1,14 @@
+<app-content [title]="'INTERCOM.SITEMAP.TITLE'" [centerText]="false">
+  <ul>
+    <li class="p-2" *ngFor="let route of routes">
+      <a class="text-primary" [routerLink]="getRouterLink(route)">{{ route.data.title | translate }}</a>
+      <ng-container *ngIf="route.children && route.children.length !== 0">
+        <ul>
+          <li class="p-2" *ngFor="let child of route.children">
+            <a class="text-primary" [routerLink]="getChildRouterLink(route, child)">{{ child.data.title | translate }}</a>
+          </li>
+        </ul>
+      </ng-container>
+    </li>
+  </ul>
+</app-content>

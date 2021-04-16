@@ -30,6 +30,9 @@
         "PLACE": "8344 Bäretswil"
       }
     },
+    "SITEMAP": {
+      "TITLE": "Sitemap"
+    },
     "COPYRIGHT": {
       "TITLE": "Urheberrecht",
       "COPYRIGHT_QA": {
@@ -58,7 +61,7 @@
         "WEBM": "WebM"
       },
       "SOUND": {
-        "TITLE": "Ton",
+        "TITLE": "Audio",
         "MP3": "MP3",
         "OGG": "OGG",
         "WAV": "WAV"

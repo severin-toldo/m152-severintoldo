@@ -16,7 +16,7 @@
       </ul>
     </div>
     <div *ngIf="!isNavbarCollapsed" class="col d-flex justify-content-end mr-5">
-      <button class="btn btn-primary rounded-pill">{{ 'NAV.SITEMAP' | translate }}</button>
+      <button class="btn btn-primary rounded-pill" [routerLink]="sitemapRoute">{{ 'NAV.SITEMAP' | translate }}</button>
     </div>
   </div>
 </nav>

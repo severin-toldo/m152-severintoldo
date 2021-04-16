@@ -1,10 +1,9 @@
-<div class="text-center">
+<div *ngIf="!alert" class="text-center">
   <i-feather (click)="playAudio()"
              class="audio-player-icon"
              name="volume-2"></i-feather>
   <br/>
-  <audio *ngIf="!alert"
-         #audioPlayer
+  <audio #audioPlayer
          class="audio-player"
          controls>
     <source [src]="src"

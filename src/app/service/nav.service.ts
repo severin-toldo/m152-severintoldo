@@ -5,7 +5,6 @@ import {
   dsvgoRoute,
   fileFormatsImageRoute, fileFormatsSoundRoute,
   fileFormatsVideoRoute,
-  homeRoute,
   imprintRoute
 } from "../shared/routes";
 

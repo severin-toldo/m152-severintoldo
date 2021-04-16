@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {Routes, RouterModule, Route} from '@angular/router';
 import {HomeComponent} from "./intercom/home/home.component";
 import {CopyrightQAComponent} from "./intercom/copyright/copyright-qa/copyright-qa.component";
 import {DsgvoComponent} from "./intercom/copyright/dsgvo/dsgvo.component";
@@ -7,6 +7,7 @@ import {ImprintComponent} from "./intercom/imprint/imprint.component";
 import {FileFormatsImageComponent} from "./intercom/file-formats/file-formats-image/file-formats-image.component";
 import {FileFormatsVideoComponent} from "./intercom/file-formats/file-formats-video/file-formats-video.component";
 import {FileFormatsSoundComponent} from "./intercom/file-formats/file-formats-sound/file-formats-sound.component";
+import {SitemapComponent} from "./intercom/sitemap/sitemap.component";
 
 const routes: Routes = [
   {
@@ -17,7 +18,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    data: {title: 'Home'},
+    data: {title: 'INTERCOM.HOME.TITLE'},
   },
   {
     path: 'imprint',
@@ -25,7 +26,17 @@ const routes: Routes = [
     data: {title: 'INTERCOM.IMPRINT.TITLE'},
   },
   {
+    path: 'sitemap',
+    component: SitemapComponent,
+    data: {title: 'INTERCOM.SITEMAP.TITLE'},
+  },
+  {
     path: 'copyright',
+    redirectTo: 'copyright/dsgvo'
+  },
+  {
+    path: 'copyright',
+    data: {title: 'INTERCOM.COPYRIGHT.TITLE'},
     children: [
       {
         path: 'dsgvo',
@@ -41,6 +52,11 @@ const routes: Routes = [
   },
   {
     path: 'file-formats',
+    redirectTo: 'file-formats/image'
+  },
+  {
+    path: 'file-formats',
+    data: {title: 'INTERCOM.FILE_FORMATS.TITLE'},
     children: [
       {
         path: 'image',
@@ -65,4 +81,10 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+  public static getRoutes(): Route[] {
+    return routes;
+  }
+
+}
