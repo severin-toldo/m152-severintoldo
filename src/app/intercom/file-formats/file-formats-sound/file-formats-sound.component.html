@@ -1,1 +1,25 @@
-<p>file-formats-sound works!</p>
+<app-content [title]="'INTERCOM.FILE_FORMATS.SOUND.TITLE'">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <app-audio-player [src]="MP3_VIDEO_PATH"></app-audio-player>
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.SOUND.MP3'"
+                                  [comparisonCategories]="MP3_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <app-audio-player [src]="OGG_VIDEO_PATH"></app-audio-player>
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.SOUND.OGG'"
+                                  [comparisonCategories]="OGG_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <app-audio-player [src]="WAV_VIDEO_PATH"></app-audio-player>
+        <app-comparison-card-list [title]="'INTERCOM.FILE_FORMATS.SOUND.WAV'"
+                                  [comparisonCategories]="WAV_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+  </div>
+</app-content>
