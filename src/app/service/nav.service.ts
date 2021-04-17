@@ -3,9 +3,19 @@ import {NavLink} from "../model/nav-link.model";
 import {
   copyrightQARoute,
   dsvgoRoute,
-  fileFormatsImageRoute, fileFormatsSoundRoute,
+  fileFormatsImageRoute,
+  fileFormatsSoundRoute,
   fileFormatsVideoRoute,
-  imprintRoute, wireframesRoute
+  imprintRoute,
+  styleGuideBaseStructureRoute,
+  styleGuideColorsRoute, styleGuideControlsRoute,
+  styleGuideDosDontsRoute,
+  styleGuideGoalsRoute,
+  styleGuideLogoBrandRoute,
+  styleGuideTargetAudienceRoute,
+  styleGuideTypographyRoute,
+  styleGuideWordingContentRoute,
+  wireframesRoute
 } from "../shared/routes";
 
 @Injectable({
@@ -24,6 +34,16 @@ export class NavService {
         .addSub(new NavLink('INTERCOM.FILE_FORMATS.SOUND.TITLE', fileFormatsSoundRoute())),
       new NavLink('INTERCOM.IMPRINT.TITLE', imprintRoute()),
       new NavLink('INTERCOM.WIREFRAMES.TITLE', wireframesRoute()),
+      new NavLink('INTERCOM.STYLE_GUIDE.TITLE')
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.GOALS.TITLE', styleGuideGoalsRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.DOS_DONTS.TITLE', styleGuideDosDontsRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.LOGO_BRAND.TITLE', styleGuideLogoBrandRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.TARGET_AUDIENCE.TITLE', styleGuideTargetAudienceRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.COLORS.TITLE', styleGuideColorsRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.TYPOGRAPHY.TITLE', styleGuideTypographyRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.WORDING_CONTENT.TITLE', styleGuideWordingContentRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.BASE_STRUCTURE.TITLE', styleGuideBaseStructureRoute()))
+        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.CONTROLS.TITLE', styleGuideControlsRoute()))
     ];
   }
 }

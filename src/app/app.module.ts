@@ -33,6 +33,15 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
 import { AudioPlayerComponent } from './custom/component/audio-player/audio-player.component';
 import { SitemapComponent } from './intercom/sitemap/sitemap.component';
 import { WireframesComponent } from './intercom/wireframes/wireframes.component';
+import { StyleGuideGoalsComponent } from './intercom/style-guide/style-guide-goals/style-guide-goals.component';
+import { StyleGuideDosDontsComponent } from './intercom/style-guide/style-guide-dos-donts/style-guide-dos-donts.component';
+import { StyleGuideTargetAudienceComponent } from './intercom/style-guide/style-guide-target-audience/style-guide-target-audience.component';
+import { StyleGuideWordingContentComponent } from './intercom/style-guide/style-guide-wording-content/style-guide-wording-content.component';
+import { StyleGuideLogoBrandComponent } from './intercom/style-guide/style-guide-logo-brand/style-guide-logo-brand.component';
+import { StyleGuideBaseStructureComponent } from './intercom/style-guide/style-guide-base-structure/style-guide-base-structure.component';
+import { StyleGuideColorsComponent } from './intercom/style-guide/style-guide-colors/style-guide-colors.component';
+import { StyleGuideTypographyComponent } from './intercom/style-guide/style-guide-typography/style-guide-typography.component';
+import { StyleGuideControlsComponent } from './intercom/style-guide/style-guide-controls/style-guide-controls.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -61,6 +70,15 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AudioPlayerComponent,
     SitemapComponent,
     WireframesComponent,
+    StyleGuideGoalsComponent,
+    StyleGuideDosDontsComponent,
+    StyleGuideTargetAudienceComponent,
+    StyleGuideWordingContentComponent,
+    StyleGuideLogoBrandComponent,
+    StyleGuideBaseStructureComponent,
+    StyleGuideColorsComponent,
+    StyleGuideTypographyComponent,
+    StyleGuideControlsComponent,
   ],
   imports: [
     BrowserModule,

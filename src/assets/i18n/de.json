@@ -69,6 +69,36 @@
         "OGG": "OGG",
         "WAV": "WAV"
       }
+    },
+    "STYLE_GUIDE": {
+      "TITLE": "Styleguide",
+      "BASE_STRUCTURE": {
+        "TITLE": "Grundstruktur"
+      },
+      "COLORS": {
+        "TITLE": "Farben"
+      },
+      "CONTROLS": {
+        "TITLE": "Schaltflächen"
+      },
+      "DOS_DONTS": {
+        "TITLE": "DOs and DONTs"
+      },
+      "GOALS": {
+        "TITLE": "Firmenphilosophie / Ziele"
+      },
+      "LOGO_BRAND": {
+        "TITLE": "Logo und Wortmarke"
+      },
+      "TARGET_AUDIENCE": {
+        "TITLE": "Zielgruppe"
+      },
+      "TYPOGRAPHY": {
+        "TITLE": "Typographie"
+      },
+      "WORDING_CONTENT": {
+        "TITLE": "Tonalität und Wording / Inhalt"
+      }
     }
   },
   "COMPONENTS": {
