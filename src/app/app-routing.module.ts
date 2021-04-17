@@ -8,6 +8,7 @@ import {FileFormatsImageComponent} from "./intercom/file-formats/file-formats-im
 import {FileFormatsVideoComponent} from "./intercom/file-formats/file-formats-video/file-formats-video.component";
 import {FileFormatsSoundComponent} from "./intercom/file-formats/file-formats-sound/file-formats-sound.component";
 import {SitemapComponent} from "./intercom/sitemap/sitemap.component";
+import {WireframesComponent} from "./intercom/wireframes/wireframes.component";
 
 const routes: Routes = [
   {
@@ -29,6 +30,11 @@ const routes: Routes = [
     path: 'sitemap',
     component: SitemapComponent,
     data: {title: 'INTERCOM.SITEMAP.TITLE'},
+  },
+  {
+    path: 'wireframes',
+    component: WireframesComponent,
+    data: {title: 'INTERCOM.WIREFRAMES.TITLE'},
   },
   {
     path: 'copyright',

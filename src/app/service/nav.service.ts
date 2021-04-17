@@ -5,7 +5,7 @@ import {
   dsvgoRoute,
   fileFormatsImageRoute, fileFormatsSoundRoute,
   fileFormatsVideoRoute,
-  imprintRoute
+  imprintRoute, wireframesRoute
 } from "../shared/routes";
 
 @Injectable({
@@ -23,6 +23,7 @@ export class NavService {
         .addSub(new NavLink('INTERCOM.FILE_FORMATS.VIDEO.TITLE', fileFormatsVideoRoute()))
         .addSub(new NavLink('INTERCOM.FILE_FORMATS.SOUND.TITLE', fileFormatsSoundRoute())),
       new NavLink('INTERCOM.IMPRINT.TITLE', imprintRoute()),
+      new NavLink('INTERCOM.WIREFRAMES.TITLE', wireframesRoute()),
     ];
   }
 }

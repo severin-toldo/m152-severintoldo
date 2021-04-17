@@ -32,6 +32,7 @@ import {ModalModule} from "ngx-bootstrap/modal";
 import {CarouselModule} from "ngx-bootstrap/carousel";
 import { AudioPlayerComponent } from './custom/component/audio-player/audio-player.component';
 import { SitemapComponent } from './intercom/sitemap/sitemap.component';
+import { WireframesComponent } from './intercom/wireframes/wireframes.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -59,6 +60,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ImageViewerModalComponent,
     AudioPlayerComponent,
     SitemapComponent,
+    WireframesComponent,
   ],
   imports: [
     BrowserModule,
