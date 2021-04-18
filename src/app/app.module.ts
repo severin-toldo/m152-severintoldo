@@ -43,6 +43,7 @@ import { StyleGuideTypographyComponent } from './intercom/style-guide/style-guid
 import { StyleGuideControlsComponent } from './intercom/style-guide/style-guide-controls/style-guide-controls.component';
 import { TableComponent } from './custom/component/table/table.component';
 import { ImageComponent } from './custom/component/image/image.component';
+import { StyleGuideColorPaletteComponent } from './intercom/style-guide/style-guide-colors/style-guide-color-palette/style-guide-color-palette.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -81,6 +82,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     StyleGuideControlsComponent,
     TableComponent,
     ImageComponent,
+    StyleGuideColorPaletteComponent,
   ],
   imports: [
     BrowserModule,
