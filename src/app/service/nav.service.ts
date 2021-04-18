@@ -41,7 +41,6 @@ export class NavService {
         .addSub(new NavLink('INTERCOM.STYLE_GUIDE.COLORS.TITLE', styleGuideColorsRoute()))
         .addSub(new NavLink('INTERCOM.STYLE_GUIDE.TYPOGRAPHY.TITLE', styleGuideTypographyRoute()))
         .addSub(new NavLink('INTERCOM.STYLE_GUIDE.WORDING_CONTENT.TITLE', styleGuideWordingContentRoute()))
-        .addSub(new NavLink('INTERCOM.STYLE_GUIDE.BASE_STRUCTURE.TITLE', styleGuideBaseStructureRoute()))
         .addSub(new NavLink('INTERCOM.STYLE_GUIDE.CONTROLS.TITLE', styleGuideControlsRoute()))
     ];
   }
