@@ -1,6 +1,6 @@
 {
   "GENERAL": {
-    "APP_TITLE": "Severin Toldo",
+    "APP_TITLE": "Severin-Toldo GmbH",
     "UNKNOWN_ERROR": "Ein unbekannter Fehler ist aufgetreten.",
     "ERROR": "Fehler!",
     "SUCCESS": "Erfolgreich!",
@@ -91,7 +91,10 @@
         "GOALS": "Ziele"
       },
       "LOGO_BRAND": {
-        "TITLE": "Logo und Wortmarke"
+        "TITLE": "Logo und Wortmarke",
+        "LOGO": "Logo",
+        "TEXT": "Schriftzug",
+        "LOGO_TEXT_COMBINATION": "Logo-Schriftzug-Kombination"
       },
       "TARGET_AUDIENCE": {
         "TITLE": "Zielgruppe"

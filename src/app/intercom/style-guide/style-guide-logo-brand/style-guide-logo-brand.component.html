@@ -1,1 +1,40 @@
-<p>style-guide-logo-brand works!</p>
+<app-content [title]="'INTERCOM.STYLE_GUIDE.LOGO_BRAND.TITLE'" [body]="LOGO_BRAND_BODY"></app-content>
+<app-content>
+  <div class="row text-center">
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <h1>{{ 'INTERCOM.STYLE_GUIDE.LOGO_BRAND.LOGO' | translate }}</h1>
+        <br/>
+        <br/>
+        <div class="logo-big">
+          <app-image [src]="'/assets/images/logo/logo.png'"></app-image>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <h1>{{ 'INTERCOM.STYLE_GUIDE.LOGO_BRAND.TEXT' | translate }}</h1>
+        <br/>
+        <br/>
+        <p class="navbar-brand">{{ 'GENERAL.APP_TITLE' | translate }}</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <h1>{{ 'INTERCOM.STYLE_GUIDE.LOGO_BRAND.LOGO_TEXT_COMBINATION' | translate }}</h1>
+        <br/>
+        <br/>
+        <div class="row">
+          <div class="col-5">
+            <div class="logo-small float-right">
+              <app-image class="d-inline-block" [src]="'/assets/images/logo/logo.png'"></app-image>
+            </div>
+          </div>
+          <div class="col-7">
+            <p class="d-inline-block navbar-brand float-left">{{ 'GENERAL.APP_TITLE' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-content>
