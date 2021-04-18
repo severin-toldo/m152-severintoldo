@@ -1,10 +1,11 @@
-<app-content [title]="'INTERCOM.STYLE_GUIDE.TYPOGRAPHY.TITLE'">
-  <p class="text-center">Für Alle typographischen Inhalte müssen Folgende Vorgaben eingehalten werden:</p>
-  <br/>
-  <br/>
+<app-content [title]="'INTERCOM.STYLE_GUIDE.TYPOGRAPHY.TITLE'" [body]="TYPOGRAPHY_BODY"></app-content>
+<app-content>
   <app-table [columns]="columns"
              [rows]="rows"
              [hideHeader]="true"
-             [hideBorders]="true"></app-table>
+             [hideBorders]="true"
+             class="text-center"></app-table>
 </app-content>
+
+
 

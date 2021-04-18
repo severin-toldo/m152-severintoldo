@@ -75,11 +75,17 @@ export class StyleGuideTypographyComponent implements OnInit {
     },
   ];
 
+  public readonly TYPOGRAPHY_BODY = this.getTypographyBody();
+
 
   constructor() {
   }
 
   public ngOnInit(): void {
+  }
+
+  private getTypographyBody(): string {
+    return 'Für Alle typographischen Inhalte müssen Folgende Vorgaben eingehalten werden:';
   }
 
 }
