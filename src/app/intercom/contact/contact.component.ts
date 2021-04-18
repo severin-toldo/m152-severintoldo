@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,8 @@ export class ContactComponent implements OnInit {
   public form: FormGroup;
 
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private toastr: ToastrService) {
   }
 
   public ngOnInit(): void {
@@ -29,6 +31,8 @@ export class ContactComponent implements OnInit {
 
   public submit(): void {
     console.log('form value: ', this.form.value);
+    this.toastr.success('Senden erfolgreich.', 'Erfolgreich!');
+    this.form.reset();
   }
 
 }

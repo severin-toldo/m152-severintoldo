@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {CookieService} from "ngx-cookie-service";
 
 @Component({
   selector: 'app-cookie-warning',
@@ -12,10 +13,13 @@ export class CookieWarningComponent implements OnInit {
   public isVisible = true;
 
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private cookieService: CookieService) {
   }
 
   public ngOnInit(): void {
+    this.isVisible = !this.cookieService.get('cookie_warning_response');
+
     this.cookiesForm = this.fb.group({
       required: [{value: true, disabled: true}, [Validators.required]],
       preferences: [''],
@@ -24,15 +28,17 @@ export class CookieWarningComponent implements OnInit {
     });
   }
 
-  // TODO proccess response
   public consentAll(): void {
-    console.log(this.cookiesForm.value);
-    this.hideToaster();
+    this.save({preferences: true, statistics: true, marketing: true});
   }
 
-  // TODO proccess response
   public saveSettings(): void {
-    console.log(this.cookiesForm.value);
+    this.save(this.cookiesForm.value);
+  }
+
+  public save(value: any) {
+    console.log(value);
+    this.cookieService.set('cookie_warning_response', value);
     this.hideToaster();
   }
 
