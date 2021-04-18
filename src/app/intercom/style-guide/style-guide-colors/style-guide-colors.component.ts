@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleGuideColorsComponent implements OnInit {
 
-  constructor() { }
+  public readonly COLORS_BODY = this.getColorsBody();
 
-  ngOnInit(): void {
+
+  constructor() {
+  }
+
+  public ngOnInit(): void {
+  }
+
+  private getColorsBody(): string {
+    return 'Um neue Kunden zu gewinnen, muss zuerst die emotionale Gehirnhälfte angesprochen werden. Die Farbe «Primary» (Rot) ist eine der am emotionalsten wahrgenommenen Farben und zieht die Aufmerksamkeit sofort auf sich. (vgl. Firmenphilosophie und Ziele)' +
+      '<br/><br/>' +
+      'Die Farben «Secondary» und «Light» ermöglichen ein dynamisches und akzentuiertes, aber dennoch konsistentes Design der Webseite.' +
+      '<br/><br/>' +
+      'Für wichtige Benachrichtigen wie Erfolge, Warnungen und Fehler sollen die Farben «Success», «Warning» und «Danger» zum Einsatz kommen, da diese das jeweilige Vorkommnis sofort visuell darstellen.';
   }
 
 }
