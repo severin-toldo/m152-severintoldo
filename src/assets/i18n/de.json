@@ -81,7 +81,9 @@
         "TITLE": "Schaltflächen"
       },
       "DOS_DONTS": {
-        "TITLE": "DOs and DONTs"
+        "TITLE": "DOs and DONTs",
+        "DOS": "DOs",
+        "DONTS": "DONTs"
       },
       "GOALS": {
         "TITLE": "Firmenphilosophie / Ziele",

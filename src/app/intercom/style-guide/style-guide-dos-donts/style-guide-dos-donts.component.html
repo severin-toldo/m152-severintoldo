@@ -1,1 +1,16 @@
-<p>style-guide-dos-donts works!</p>
+<app-content [title]="'INTERCOM.STYLE_GUIDE.DOS_DONTS.TITLE'">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-comparison-card-list [title]="'INTERCOM.STYLE_GUIDE.DOS_DONTS.DOS'"
+                                  [comparisonCategories]="DOS_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-comparison-card-list [title]="'INTERCOM.STYLE_GUIDE.DOS_DONTS.DONTS'"
+                                  [comparisonCategories]="DONTS_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+  </div>
+</app-content>
