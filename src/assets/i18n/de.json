@@ -100,7 +100,9 @@
         "TITLE": "Typographie"
       },
       "WORDING_CONTENT": {
-        "TITLE": "Tonalität und Wording / Inhalt"
+        "TITLE": "Tonalität und Wording / Inhalt",
+        "WORDING": "Tonalität und Wording",
+        "CONTENT": "Inhalt"
       }
     }
   },

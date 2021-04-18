@@ -1,1 +1,17 @@
-<p>style-guide-wording-content works!</p>
+<app-content [title]="'INTERCOM.STYLE_GUIDE.WORDING_CONTENT.WORDING'">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-comparison-card-list [title]="'INTERCOM.STYLE_GUIDE.DOS_DONTS.DOS'"
+                                  [comparisonCategories]="DOS_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-comparison-card-list [title]="'INTERCOM.STYLE_GUIDE.DOS_DONTS.DONTS'"
+                                  [comparisonCategories]="DONTS_COMPARISON_CATEGORIES"></app-comparison-card-list>
+      </div>
+    </div>
+  </div>
+</app-content>
+<app-content [title]="'INTERCOM.STYLE_GUIDE.WORDING_CONTENT.CONTENT'" [body]="CONTENT_BODY"></app-content>
