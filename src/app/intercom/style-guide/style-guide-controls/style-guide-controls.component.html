@@ -1,1 +1,216 @@
-<p>style-guide-controls works!</p>
+<app-content [title]="'INTERCOM.STYLE_GUIDE.CONTROLS.TITLE'">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-heading-two [title]="'Alerts'"></app-heading-two>
+        <div class="alert alert-success" role="alert">
+          Success!
+        </div>
+        <div class="alert alert-warning" role="alert">
+          Warning!
+        </div>
+        <div class="alert alert-danger" role="alert">
+          Danger!
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-heading-two [title]="'Buttons'"></app-heading-two>
+        <div class="text-center">
+          <button class="btn btn-primary rounded-pill">Primary</button>
+          <br/>
+          <br/>
+          <button class="btn btn-outline-primary rounded-pill">Secondary</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-heading-two [title]="'Toasters'"></app-heading-two>
+        <div class="text-center">
+          <button class="btn btn-primary rounded-pill" (click)="popSuccessToaster()">Success (Click)</button>
+          <br/>
+          <br/>
+          <button class="btn btn-primary rounded-pill" (click)="popWarnToaster()">Warn (Click)</button>
+          <br/>
+          <br/>
+          <button class="btn btn-primary rounded-pill" (click)="popDangerToaster()">Danger (Click)</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-heading-two [title]="'Icons'"></app-heading-two>
+        <p class="text-center">Nachfolgende Icons werden momentan verwendet. Eine komplette Liste der verfügbaren Icons ist auf der <a class="text-primary" target="_blank" href="https://github.com/michaelbazos/angular-feather">Github Seite der Feather Library</a> zu finden.</p>
+        <br/>
+        <div class="text-center">
+          <div class="row">
+            <div class="col">
+              <i-feather class="icon" name="menu"></i-feather>
+            </div>
+            <div class="col">
+              <i-feather class="icon ml-2" name="alert-triangle"></i-feather>
+            </div>
+            <div class="col">
+              <i-feather class="icon ml-2" name="volume-2"></i-feather>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="pb-5">
+        <app-heading-two [title]="'Accordions'"></app-heading-two>
+          <ngb-accordion>
+            <ngb-panel [title]="'Title 1'">
+              <ng-template ngbPanelContent>
+                <div class="ml-3" [innerText]="'Content 1'"></div>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+          <ngb-accordion>
+            <ngb-panel [title]="'Title 2'">
+              <ng-template ngbPanelContent>
+                <div class="ml-3" [innerText]="'Content 2'"></div>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+          <ngb-accordion>
+            <ngb-panel [title]="'Title 3'">
+              <ng-template ngbPanelContent>
+                <div class="ml-3" [innerText]="'Content 3'"></div>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-heading-two [title]="'Form'"></app-heading-two>
+          <div>
+            <div class="form-group">
+              <label for="firstname">Vorname*</label>
+              <input type="text" class="form-control" id="firstname" placeholder="Vorname" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Nachname*</label>
+              <input type="text" class="form-control" id="lastname" placeholder="Nachname" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" class="form-control" id="email" placeholder="example@email.com">
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="zip">PLZ</label>
+                  <input type="text" class="form-control" id="zip" placeholder="PLZ">
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="form-group">
+                  <label for="place">Ort</label>
+                  <input type="text" class="form-control" id="place" placeholder="Ort">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Mitteilung*</label>
+              <textarea class="form-control" id="message" placeholder="Mitteilung" required></textarea>
+            </div>
+            <div class="float-right">
+              <button class="btn btn-outline-primary rounded-pill">Zurücksetzen</button>
+              <button class="btn btn-primary rounded-pill ml-2">Senden</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="pb-5">
+        <app-heading-two [title]="'Content'"></app-heading-two>
+        <app-content [title]="'Überschrift 1'">
+          <app-heading-two [title]="'Überschrift 2'"></app-heading-two>
+          <app-heading-three [title]="'Überschrift 3'"></app-heading-three>
+          <app-heading-four [title]="'Überschrift 4'"></app-heading-four>
+          <app-heading-five [title]="'Überschrift 5'"></app-heading-five>
+          <p class="text-center">Text</p>
+        </app-content>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="pb-5">
+        <app-heading-two [title]="'Comparision Views'"></app-heading-two>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="pb-5">
+              <app-comparison-card-list [title]="'Eins'"
+                                        [comparisonCategories]="COMPARISON_CATEGORIES"></app-comparison-card-list>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="pb-5">
+              <app-comparison-card-list [title]="'Zwei'"
+                                        [comparisonCategories]="COMPARISON_CATEGORIES"></app-comparison-card-list>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="pb-5">
+              <app-comparison-card-list [title]="'Drei'"
+                                        [comparisonCategories]="COMPARISON_CATEGORIES"></app-comparison-card-list>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="pb-5">
+              <app-comparison-card-list [title]="'Vier'"
+                                        [comparisonCategories]="COMPARISON_CATEGORIES"></app-comparison-card-list>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <app-heading-two [title]="'Image Carrousel'"></app-heading-two>
+        <app-image-viewer [images]="IMAGES"></app-image-viewer>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <app-heading-two [title]="'Video Player'"></app-heading-two>
+        <app-video-player [src]="VIDEO_PATH" [thumbnail]="VIDEO_THUMBNAIL_PATH"></app-video-player>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="pb-5">
+        <app-heading-two [title]="'Audio Player'"></app-heading-two>
+        <app-audio-player [src]="AUDIO_PATH"></app-audio-player>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="pb-5">
+        <app-heading-two [title]="'Tables'"></app-heading-two>
+        <app-table [columns]="columns"
+                   [rows]="rows"></app-table>
+        <br/>
+        <br/>
+        <app-table [columns]="columns"
+                   [rows]="rows"
+                   [hideBorders]="true"
+                   [hideHeader]="true"></app-table>
+      </div>
+    </div>
+  </div>
+</app-content>
