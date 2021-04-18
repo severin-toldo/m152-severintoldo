@@ -2,5 +2,6 @@
   <h1 [class.text-center]="centerText">{{ title | translate }}</h1>
   <br/>
   <br/>
-  <ng-content></ng-content>
+  <p *ngIf="body" [class.text-center]="centerText" class="custom-paragraph">{{ body }}</p>
+  <ng-content *ngIf="!body"></ng-content>
 </div>
