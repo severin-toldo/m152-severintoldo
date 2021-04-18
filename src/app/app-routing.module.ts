@@ -17,6 +17,7 @@ import {StyleGuideTargetAudienceComponent} from "./intercom/style-guide/style-gu
 import {StyleGuideTypographyComponent} from "./intercom/style-guide/style-guide-typography/style-guide-typography.component";
 import {StyleGuideWordingContentComponent} from "./intercom/style-guide/style-guide-wording-content/style-guide-wording-content.component";
 import {StyleGuideControlsComponent} from "./intercom/style-guide/style-guide-controls/style-guide-controls.component";
+import {ContactComponent} from "./intercom/contact/contact.component";
 
 const routes: Routes = [
   {
@@ -43,6 +44,11 @@ const routes: Routes = [
     path: 'wireframes',
     component: WireframesComponent,
     data: {title: 'INTERCOM.WIREFRAMES.TITLE'},
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: {title: 'INTERCOM.CONTACT.TITLE'},
   },
   {
     path: 'copyright',

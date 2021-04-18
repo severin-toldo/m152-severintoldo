@@ -49,11 +49,33 @@ import { HeadingTwoComponent } from './custom/component/heading/heading-two/head
 import { HeadingThreeComponent } from './custom/component/heading/heading-three/heading-three.component';
 import { HeadingFourComponent } from './custom/component/heading/heading-four/heading-four.component';
 import { HeadingFiveComponent } from './custom/component/heading/heading-five/heading-five.component';
+import {ToastrModule} from "ngx-toastr";
+import { ContactComponent } from './intercom/contact/contact.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
 }
+
+const translateModuleConfig = {
+  defaultLanguage: 'de',
+  loader: {
+    provide: TranslateLoader,
+    useFactory: httpLoaderFactory,
+    deps: [HttpClient],
+  },
+};
+
+const featherModuleConfig = {
+  Menu,
+  AlertTriangle,
+  Volume2
+};
+
+const toastrModuleConfig = {
+  positionClass: 'toast-bottom-right',
+};
+
 
 @NgModule({
   declarations: [
@@ -93,6 +115,7 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     HeadingThreeComponent,
     HeadingFourComponent,
     HeadingFiveComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -100,24 +123,14 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbCollapseModule,
-    ToasterModule.forRoot(),
-    ModalModule.forRoot(),
-    CarouselModule.forRoot(),
     NgbModule,
     ReactiveFormsModule,
-    TranslateModule.forRoot({
-      defaultLanguage: 'de',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: httpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
-    FeatherModule.pick({
-      Menu,
-      AlertTriangle,
-      Volume2
-    })
+    ModalModule.forRoot(),
+    CarouselModule.forRoot(),
+    ToasterModule.forRoot(),
+    ToastrModule.forRoot(toastrModuleConfig),
+    TranslateModule.forRoot(translateModuleConfig),
+    FeatherModule.pick(featherModuleConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]

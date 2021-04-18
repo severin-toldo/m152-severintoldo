@@ -7,7 +7,6 @@ import {
   fileFormatsSoundRoute,
   fileFormatsVideoRoute,
   imprintRoute,
-  styleGuideBaseStructureRoute,
   styleGuideColorsRoute, styleGuideControlsRoute,
   styleGuideDosDontsRoute,
   styleGuideGoalsRoute,
