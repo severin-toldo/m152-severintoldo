@@ -9,7 +9,6 @@ import {FileFormatsVideoComponent} from "./intercom/file-formats/file-formats-vi
 import {FileFormatsSoundComponent} from "./intercom/file-formats/file-formats-sound/file-formats-sound.component";
 import {SitemapComponent} from "./intercom/sitemap/sitemap.component";
 import {WireframesComponent} from "./intercom/wireframes/wireframes.component";
-import {StyleGuideBaseStructureComponent} from "./intercom/style-guide/style-guide-base-structure/style-guide-base-structure.component";
 import {StyleGuideColorsComponent} from "./intercom/style-guide/style-guide-colors/style-guide-colors.component";
 import {StyleGuideDosDontsComponent} from "./intercom/style-guide/style-guide-dos-donts/style-guide-dos-donts.component";
 import {StyleGuideGoalsComponent} from "./intercom/style-guide/style-guide-goals/style-guide-goals.component";
@@ -18,15 +17,6 @@ import {StyleGuideTargetAudienceComponent} from "./intercom/style-guide/style-gu
 import {StyleGuideTypographyComponent} from "./intercom/style-guide/style-guide-typography/style-guide-typography.component";
 import {StyleGuideWordingContentComponent} from "./intercom/style-guide/style-guide-wording-content/style-guide-wording-content.component";
 import {StyleGuideControlsComponent} from "./intercom/style-guide/style-guide-controls/style-guide-controls.component";
-import {NavLink} from "./model/nav-link.model";
-import {
-  styleGuideBaseStructureRoute,
-  styleGuideColorsRoute, styleGuideControlsRoute,
-  styleGuideDosDontsRoute,
-  styleGuideGoalsRoute,
-  styleGuideLogoBrandRoute,
-  styleGuideTargetAudienceRoute, styleGuideTypographyRoute, styleGuideWordingContentRoute
-} from "./shared/routes";
 
 const routes: Routes = [
   {
@@ -141,11 +131,6 @@ const routes: Routes = [
         path: 'wording-content',
         component: StyleGuideWordingContentComponent,
         data: {title: 'INTERCOM.STYLE_GUIDE.WORDING_CONTENT.TITLE'},
-      },
-      {
-        path: 'base-structure',
-        component: StyleGuideBaseStructureComponent,
-        data: {title: 'INTERCOM.STYLE_GUIDE.BASE_STRUCTURE.TITLE'},
       },
       {
         path: 'controls',

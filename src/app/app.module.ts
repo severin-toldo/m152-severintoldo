@@ -38,7 +38,6 @@ import { StyleGuideDosDontsComponent } from './intercom/style-guide/style-guide-
 import { StyleGuideTargetAudienceComponent } from './intercom/style-guide/style-guide-target-audience/style-guide-target-audience.component';
 import { StyleGuideWordingContentComponent } from './intercom/style-guide/style-guide-wording-content/style-guide-wording-content.component';
 import { StyleGuideLogoBrandComponent } from './intercom/style-guide/style-guide-logo-brand/style-guide-logo-brand.component';
-import { StyleGuideBaseStructureComponent } from './intercom/style-guide/style-guide-base-structure/style-guide-base-structure.component';
 import { StyleGuideColorsComponent } from './intercom/style-guide/style-guide-colors/style-guide-colors.component';
 import { StyleGuideTypographyComponent } from './intercom/style-guide/style-guide-typography/style-guide-typography.component';
 import { StyleGuideControlsComponent } from './intercom/style-guide/style-guide-controls/style-guide-controls.component';
@@ -77,7 +76,6 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     StyleGuideTargetAudienceComponent,
     StyleGuideWordingContentComponent,
     StyleGuideLogoBrandComponent,
-    StyleGuideBaseStructureComponent,
     StyleGuideColorsComponent,
     StyleGuideTypographyComponent,
     StyleGuideControlsComponent,

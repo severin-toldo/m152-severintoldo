@@ -10,7 +10,6 @@ export const fileFormatsImageRoute = () => [`/file-formats/image`];
 export const fileFormatsVideoRoute = () => [`/file-formats/video`];
 export const fileFormatsSoundRoute = () => [`/file-formats/sound`];
 
-export const styleGuideBaseStructureRoute = () => [`/style-guide/base-structure`];
 export const styleGuideColorsRoute = () => [`/style-guide/colors`];
 export const styleGuideDosDontsRoute = () => [`/style-guide/dos-donts`];
 export const styleGuideGoalsRoute = () => [`/style-guide/goals`];
