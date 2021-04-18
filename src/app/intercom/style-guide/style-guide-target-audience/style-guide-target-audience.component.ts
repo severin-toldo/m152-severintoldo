@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleGuideTargetAudienceComponent implements OnInit {
 
-  constructor() { }
+  public readonly TARGET_AUDIENCE_BODY = this.getTargetAudienceBody();
 
-  ngOnInit(): void {
+
+  constructor() {
+  }
+
+  public ngOnInit(): void {
+  }
+
+  public getTargetAudienceBody(): string {
+    return 'Diese Webseite soll sich an eine breite Masse an Firmen richten, die noch keinen Webauftritt haben. Meist sind dies etwas in die Jahre gekommene Einzelunternehmungen oder KMUs. <br/> <br/> Diese Unternehmungen brauchen einen modernen, aber dennoch professionellen Webauftritt, dessen Erstellung zudem preiswert ist.';
   }
 
 }
