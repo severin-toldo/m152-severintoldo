@@ -1,0 +1,12 @@
+<table class="table" [class.table-bordered]="!hideBorders" [class.table-borderless]="hideBorders">
+  <thead *ngIf="!hideHeader">
+    <tr>
+      <th *ngFor="let column of columns"class="bg-light">{{ column.title | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rows">
+      <td *ngFor="let column of columns" [innerHTML]="(row[column.name])"></td>
+    </tr>
+  </tbody>
+</table>

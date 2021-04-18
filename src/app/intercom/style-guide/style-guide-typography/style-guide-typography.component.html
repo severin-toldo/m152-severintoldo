@@ -1,1 +1,10 @@
-<p>style-guide-typography works!</p>
+<app-content [title]="'INTERCOM.STYLE_GUIDE.TYPOGRAPHY.TITLE'">
+  <p class="text-center">Für Alle typographischen Inhalte müssen Folgende Vorgaben eingehalten werden:</p>
+  <br/>
+  <br/>
+  <app-table [columns]="columns"
+             [rows]="rows"
+             [hideHeader]="true"
+             [hideBorders]="true"></app-table>
+</app-content>
+
