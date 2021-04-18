@@ -1,7 +1,5 @@
 <div class="m-5">
-  <h1 [class.text-center]="centerText">{{ title | translate }}</h1>
-  <br/>
-  <br/>
+  <app-heading-one [centerText]="centerText" [title]="title"></app-heading-one>
   <p *ngIf="body" [class.text-center]="centerText" class="custom-paragraph pb-5" [innerHTML]="body"></p>
   <ng-content *ngIf="!body"></ng-content>
 </div>

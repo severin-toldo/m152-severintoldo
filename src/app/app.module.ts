@@ -44,6 +44,11 @@ import { StyleGuideControlsComponent } from './intercom/style-guide/style-guide-
 import { TableComponent } from './custom/component/table/table.component';
 import { ImageComponent } from './custom/component/image/image.component';
 import { StyleGuideColorPaletteComponent } from './intercom/style-guide/style-guide-colors/style-guide-color-palette/style-guide-color-palette.component';
+import { HeadingOneComponent } from './custom/component/heading/heading-one/heading-one.component';
+import { HeadingTwoComponent } from './custom/component/heading/heading-two/heading-two.component';
+import { HeadingThreeComponent } from './custom/component/heading/heading-three/heading-three.component';
+import { HeadingFourComponent } from './custom/component/heading/heading-four/heading-four.component';
+import { HeadingFiveComponent } from './custom/component/heading/heading-five/heading-five.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -83,6 +88,11 @@ export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     TableComponent,
     ImageComponent,
     StyleGuideColorPaletteComponent,
+    HeadingOneComponent,
+    HeadingTwoComponent,
+    HeadingThreeComponent,
+    HeadingFourComponent,
+    HeadingFiveComponent,
   ],
   imports: [
     BrowserModule,
