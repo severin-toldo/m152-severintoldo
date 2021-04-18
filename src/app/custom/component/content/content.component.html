@@ -1,5 +1,13 @@
 <div class="m-5">
   <app-heading-one [centerText]="centerText" [title]="title"></app-heading-one>
-  <p *ngIf="body" [class.text-center]="centerText" class="custom-paragraph pb-5" [innerHTML]="body"></p>
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <p *ngIf="body" [class.text-center]="centerText" [innerHTML]="body"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </div>
   <ng-content *ngIf="!body"></ng-content>
 </div>
