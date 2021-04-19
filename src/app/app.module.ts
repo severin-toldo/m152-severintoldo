@@ -54,6 +54,7 @@ import { ContactComponent } from './intercom/contact/contact.component';
 import { FooterComponent } from './custom/snippet/footer/footer.component';
 import { AnimationsComponent } from './intercom/animations/animations.component';
 import { AppearDirective } from './custom/directive/appear.directive';
+import { GalleryComponent } from './intercom/gallery/gallery.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -122,6 +123,7 @@ const toastrModuleConfig = {
     FooterComponent,
     AnimationsComponent,
     AppearDirective,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

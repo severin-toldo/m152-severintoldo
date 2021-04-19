@@ -19,6 +19,7 @@ import {StyleGuideWordingContentComponent} from "./intercom/style-guide/style-gu
 import {StyleGuideControlsComponent} from "./intercom/style-guide/style-guide-controls/style-guide-controls.component";
 import {ContactComponent} from "./intercom/contact/contact.component";
 import {AnimationsComponent} from "./intercom/animations/animations.component";
+import {GalleryComponent} from "./intercom/gallery/gallery.component";
 
 const routes: Routes = [
   {
@@ -55,6 +56,11 @@ const routes: Routes = [
     path: 'animations',
     component: AnimationsComponent,
     data: {title: 'INTERCOM.ANIMATIONS.TITLE'},
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent,
+    data: {title: 'INTERCOM.GALLERY.TITLE'},
   },
   {
     path: 'copyright',
