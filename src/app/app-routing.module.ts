@@ -18,6 +18,7 @@ import {StyleGuideTypographyComponent} from "./intercom/style-guide/style-guide-
 import {StyleGuideWordingContentComponent} from "./intercom/style-guide/style-guide-wording-content/style-guide-wording-content.component";
 import {StyleGuideControlsComponent} from "./intercom/style-guide/style-guide-controls/style-guide-controls.component";
 import {ContactComponent} from "./intercom/contact/contact.component";
+import {AnimationsComponent} from "./intercom/animations/animations.component";
 
 const routes: Routes = [
   {
@@ -49,6 +50,11 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
     data: {title: 'INTERCOM.CONTACT.TITLE'},
+  },
+  {
+    path: 'animations',
+    component: AnimationsComponent,
+    data: {title: 'INTERCOM.ANIMATIONS.TITLE'},
   },
   {
     path: 'copyright',

@@ -42,6 +42,15 @@
     "CONTACT": {
       "TITLE": "Kontakt"
     },
+    "ANIMATIONS": {
+      "TITLE": "Animationen",
+      "TRANSFORMATION": "Transformation",
+      "TRANSLATION": "Translation",
+      "TRANSITION": "Transition",
+      "SVG_ANIMATION": "SVG Animation",
+      "GIF_ANIMATION": "GIF Animation",
+      "HTML5_CANVAS": "HTML-5 Canvas"
+    },
     "COPYRIGHT": {
       "TITLE": "Urheberrecht",
       "COPYRIGHT_QA": {

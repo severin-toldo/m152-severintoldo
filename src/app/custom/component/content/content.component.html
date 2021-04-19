@@ -1,5 +1,11 @@
 <div class="m-5">
-  <app-heading-one [centerText]="centerText" [title]="title"></app-heading-one>
+  <app-heading-one *ngIf="heading === 'h1'"
+                   [centerText]="centerText"
+                   [title]="title"></app-heading-one>
+  <app-heading-two *ngIf="heading === 'h2'"
+                   [centerText]="centerText"
+                   [title]="title"></app-heading-two>
+
   <div class="row">
     <div class="col-lg-2">
     </div>

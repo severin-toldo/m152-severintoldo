@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ContentComponent implements OnInit {
 
   @Input() public title: string;
+  @Input() public heading = 'h1';
   @Input() public body: string;
   @Input() public centerText = true;
 

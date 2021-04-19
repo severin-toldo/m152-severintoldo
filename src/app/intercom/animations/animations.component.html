@@ -1,0 +1,107 @@
+<app-content [title]="'INTERCOM.ANIMATIONS.TITLE'" [body]="ANIMATIONS_BODY"></app-content>
+
+<div #transformationWrapper (appear)="onAppear(transformationWrapper)" class="hide">
+  <app-content [title]="'INTERCOM.ANIMATIONS.TRANSFORMATION'" [heading]="'h2'" [body]="TRANSFORMATION_BODY"></app-content>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div id="transformationExampleDiv">
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div #translationWrapper (appear)="onAppear(translationWrapper)" class="hide">
+  <app-content [title]="'INTERCOM.ANIMATIONS.TRANSLATION'" [heading]="'h2'" [body]="TRANSLATION_BODY"></app-content>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div id="translationExampleDiv">
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div #transitionWrapper (appear)="onAppear(transitionWrapper)" class="hide">
+  <app-content [title]="'INTERCOM.ANIMATIONS.TRANSITION'" [heading]="'h2'" [body]="TRANSITION_BODY"></app-content>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div #transitionExampleDiv id="transitionExampleDiv">
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-2">
+      <button class="btn btn-primary rounded-pill ml-2" (click)="triggerJumpAnimation()">{{ 'Jump' }}</button>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div #svgAnimationWrapper (appear)="onAppear(svgAnimationWrapper)" class="hide">
+  <app-content [title]="'INTERCOM.ANIMATIONS.SVG_ANIMATION'" [heading]="'h2'" [body]="SVG_ANIMATION_BODY"></app-content>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+             width="100%" height="100%" viewBox="-4 -4 8 8">
+          <title>SVG animation using SMIL</title>
+          <circle cx="0" cy="1" r="2" stroke="red" fill="none">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="rotate"
+              from="0"
+              to="360"
+              begin="0s"
+              dur="1s"
+              repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div #gifAnimationWrapper (appear)="onAppear(gifAnimationWrapper)" class="hide">
+  <app-content [title]="'INTERCOM.ANIMATIONS.GIF_ANIMATION'" [heading]="'h2'" [body]="GIF_ANIMATION_BODY"></app-content>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div>
+        <app-image [src]="'/assets/images/animations/animated_gif.gif'"></app-image>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div #html5CanvasWrapper (appear)="onAppear(html5CanvasWrapper)" class="hide">
+  <app-content [title]="'INTERCOM.ANIMATIONS.HTML5_CANVAS'" [heading]="'h2'" [body]="HTML5_CANVAS_BODY"></app-content>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <canvas #exampleCanvas id="exampleCanvas" class="border"></canvas>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-2">
+      <button class="btn btn-primary rounded-pill ml-2" (click)="drawCanvas()">{{ 'Draw' }}</button>
+    </div>
+  </div>
+</div>
