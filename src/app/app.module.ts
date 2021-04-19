@@ -51,6 +51,7 @@ import { HeadingFourComponent } from './custom/component/heading/heading-four/he
 import { HeadingFiveComponent } from './custom/component/heading/heading-five/heading-five.component';
 import {ToastrModule} from "ngx-toastr";
 import { ContactComponent } from './intercom/contact/contact.component';
+import { FooterComponent } from './custom/snippet/footer/footer.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -116,6 +117,7 @@ const toastrModuleConfig = {
     HeadingFourComponent,
     HeadingFiveComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

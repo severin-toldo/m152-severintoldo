@@ -1,3 +1,5 @@
 <h4 [class.text-center]="centerText">{{ title | translate }}</h4>
-<br/>
-<br/>
+<ng-container *ngIf="showSpacing">
+  <br/>
+  <br/>
+</ng-container>

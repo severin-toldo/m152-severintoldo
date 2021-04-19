@@ -1,0 +1,32 @@
+<footer class="mt-5">
+  <hr class="horizontal-line">
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-2">
+      <div class="logo-small d-inline-block">
+        <app-image class="d-inline-block" [src]="'/assets/images/logo/logo.png'"></app-image>
+      </div>
+      GENERAL.APP_TITLE
+      TODO COPYRIGHT + SPACING
+    </div>
+    <div class="col-2">
+    </div>
+    <div class="col-2">
+    </div>
+    <div class="col-2">
+      <app-heading-four [title]="'FOOTER.ABOUT'" [centerText]="false" [showSpacing]="false"></app-heading-four>
+      <a class="text-primary" (click)="onContactLinkClick()">{{ 'INTERCOM.CONTACT.TITLE' | translate }}</a>
+      <br/>
+      <a class="text-primary" (click)="onImprintLinkClick()">{{ 'INTERCOM.IMPRINT.TITLE' | translate }}</a>
+      <br/>
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+</footer>
+
+
