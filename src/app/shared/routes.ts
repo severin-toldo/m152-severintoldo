@@ -3,6 +3,8 @@ export const imprintRoute = () => [`/imprint`];
 export const sitemapRoute = () => [`/sitemap`];
 export const wireframesRoute = () => [`/wireframes`];
 export const contactRoute = () => [`/contact`];
+export const galleryRoute = () => [`/gallery`];
+export const animationsRoute = () => [`/animations`];
 
 export const dsvgoRoute = () => [`/copyright/dsgvo`];
 export const copyrightQARoute = () => [`/copyright/copyright-qa`];

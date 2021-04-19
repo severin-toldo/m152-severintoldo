@@ -33,11 +33,6 @@ const routes: Routes = [
     data: {title: 'INTERCOM.HOME.TITLE'},
   },
   {
-    path: 'imprint',
-    component: ImprintComponent,
-    data: {title: 'INTERCOM.IMPRINT.TITLE'},
-  },
-  {
     path: 'sitemap',
     component: SitemapComponent,
     data: {title: 'INTERCOM.SITEMAP.TITLE'},
@@ -46,16 +41,6 @@ const routes: Routes = [
     path: 'wireframes',
     component: WireframesComponent,
     data: {title: 'INTERCOM.WIREFRAMES.TITLE'},
-  },
-  {
-    path: 'contact',
-    component: ContactComponent,
-    data: {title: 'INTERCOM.CONTACT.TITLE'},
-  },
-  {
-    path: 'animations',
-    component: AnimationsComponent,
-    data: {title: 'INTERCOM.ANIMATIONS.TITLE'},
   },
   {
     path: 'gallery',
@@ -81,6 +66,11 @@ const routes: Routes = [
         data: {title: 'INTERCOM.COPYRIGHT.COPYRIGHT_QA.TITLE'},
       }
     ],
+  },
+  {
+    path: 'animations',
+    component: AnimationsComponent,
+    data: {title: 'INTERCOM.ANIMATIONS.TITLE'},
   },
   {
     path: 'file-formats',
@@ -156,6 +146,16 @@ const routes: Routes = [
         data: {title: 'INTERCOM.STYLE_GUIDE.CONTROLS.TITLE'},
       }
     ],
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: {title: 'INTERCOM.CONTACT.TITLE'},
+  },
+  {
+    path: 'imprint',
+    component: ImprintComponent,
+    data: {title: 'INTERCOM.IMPRINT.TITLE'},
   },
 ];
 
