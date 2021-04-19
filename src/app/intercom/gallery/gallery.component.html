@@ -1,19 +1,11 @@
 <app-content [title]="'INTERCOM.GALLERY.TITLE'">
-  <div class="row">
-    <div class="col-4">
-    </div>
-    <div class="col-4">
-      <carousel [interval]="2000">
-        <slide *ngFor="let image of images">
-          <app-image [src]="image.src"></app-image>
-          <div class="carousel-caption d-none d-md-block">
-            <h3>{{ image.caption }}</h3>
-          </div>
-        </slide>
-      </carousel>
-    </div>
-    <div class="col-4">
-    </div>
-  </div>
+  <carousel [interval]="2000">
+    <slide *ngFor="let image of images">
+      <app-image [src]="image.src"></app-image>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{ image.caption }}</h3>
+      </div>
+    </slide>
+  </carousel>
 </app-content>
 
