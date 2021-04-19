@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { contactRoute } from 'src/app/shared/routes';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public readonly contactRoute = contactRoute;
 
-  ngOnInit(): void {
+
+  constructor() {
+  }
+
+  public ngOnInit(): void {
   }
 
 }

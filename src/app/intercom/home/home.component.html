@@ -1,3 +1,74 @@
-<app-content [title]="'INTERCOM.HOME.TITLE'">
-  <p>{{ 'INTERCOM.HOME.BODY' | translate }}</p>
-</app-content>
+<app-style-guide-goals></app-style-guide-goals>
+<app-heading-two [title]="'Überzeugt?'"></app-heading-two>
+<section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Basic</h5>
+            <h6 class="card-price text-center">$9<span class="period">/ Monat</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Kostenlose Beratung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Kundengespräch</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Planung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Realisierung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Testing</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>E-Mail Support</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Telefon Support</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>3rd Level Support</li>
+            </ul>
+            <br/>
+            <button class="btn btn-primary rounded-pill ml-2 w-100" [routerLink]="contactRoute()">{{ 'Kontaktieren Sie uns!' }}</button>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+            <h6 class="card-price text-center">$29<span class="period">/ Monat</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Kostenlose Beratung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Kundengespräch</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Planung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Realisierung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Testing</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>E-Mail Support</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Telefon Support</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>3rd Level Support</li>
+            </ul>
+            <br/>
+            <button class="btn btn-primary rounded-pill ml-2 w-100" [routerLink]="contactRoute()">{{ 'Kontaktieren Sie uns!' }}</button>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+            <h6 class="card-price text-center">$99<span class="period">/ Monat</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Kostenlose Beratung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Kundengespräch</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Planung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Realisierung</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Testing</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>E-Mail Support</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Telefon Support</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>3rd Level Support</li>
+            </ul>
+            <br/>
+            <button class="btn btn-primary rounded-pill ml-2 w-100" [routerLink]="contactRoute()">{{ 'Kontaktieren Sie uns!' }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
