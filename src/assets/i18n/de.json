@@ -31,7 +31,9 @@
         "EMAIL": "severin.toldo@edu.tbz.ch",
         "STREET": "Mühlerainstrasse 4",
         "PLACE": "8344 Bäretswil"
-      }
+      },
+      "SOURCES": "Quellen",
+      "COPYRIGHT": "Urheberrecht"
     },
     "SITEMAP": {
       "TITLE": "Sitemap"

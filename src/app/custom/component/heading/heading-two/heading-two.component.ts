@@ -9,6 +9,7 @@ export class HeadingTwoComponent implements OnInit {
 
   @Input() public title: string;
   @Input() public centerText = true;
+  @Input() public showSpacing = true;
 
 
   constructor() {
