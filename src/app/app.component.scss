@@ -1,0 +1,19 @@
+.chat-bot {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.chat-bot-button {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  height: 4rem;
+  width: 4rem;
+  z-index: 99;
+}
+
+.chat-bot-button:hover {
+  cursor: pointer;
+}

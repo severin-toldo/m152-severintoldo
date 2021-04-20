@@ -18,7 +18,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import { ContentComponent } from './custom/component/content/content.component';
 import {FeatherModule} from "angular-feather";
-import {AlertTriangle, Menu, Twitch, User, Volume2} from "angular-feather/icons";
+import {AlertTriangle, Menu, MessageSquare, Twitch, User, Volume2} from "angular-feather/icons";
 import { NavLinkComponent } from './custom/snippet/nav/nav-link/nav-link.component';
 import { DefaultOrderKeyvaluePipe } from './custom/pipe/default-order-keyvalue.pipe';
 import { FileFormatsImageComponent } from './intercom/file-formats/file-formats-image/file-formats-image.component';
@@ -77,7 +77,8 @@ const featherModuleConfig = {
   AlertTriangle,
   Volume2,
   User,
-  Twitch
+  Twitch,
+  MessageSquare
 };
 
 const toastrModuleConfig = {

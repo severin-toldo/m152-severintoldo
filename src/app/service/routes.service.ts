@@ -40,8 +40,6 @@ export class RoutesService {
 
         return routeByNames;
       }));
-
-    this.routeByNames$.subscribe(res => console.log(res));
   }
 
   public getRoutes(): Route[] {

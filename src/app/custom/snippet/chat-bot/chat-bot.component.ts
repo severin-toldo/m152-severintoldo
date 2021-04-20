@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {ChatMessage} from "../../../model/chat-message.model";
 import {RoutesService} from "../../../service/routes.service";
@@ -50,6 +50,7 @@ export class ChatBotComponent implements OnInit {
               this.addBotMessage('Diese Seite existiert nicht. Bitte versuchen sie es erneut.');
             } else {
               this.addBotMessage('Ich werde Sie nun zu dieser Seite weiterleiten.');
+              this.close();
               window.scrollTo(0, 0);
               this.router.navigate([res]);
             }
