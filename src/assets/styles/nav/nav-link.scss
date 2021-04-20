@@ -9,13 +9,7 @@
   cursor: pointer !important;
 }
 
-.abstract-nav-link-dropdown {
-  background-color: transparent !important;
-  border-color: transparent !important;
-}
-
 .nav-link-dropdown {
-  @extend .abstract-nav-link-dropdown;
   color: $secondary !important;
 }
 
@@ -24,7 +18,6 @@
 .nav-link-dropdown:active,
 .nav-link-dropdown.active,
 .open > .dropdown-toggle .nav-link-dropdown {
-  @extend .abstract-nav-link-dropdown;
   color: $primary !important;
   outline: none !important;
   box-shadow: none !important;
@@ -41,13 +34,7 @@
   border-bottom-color: $primaryDark !important;
 }
 
-/* normal nav-link active */
 .active .nav-link {
-  @extend .active-nav-link;
-}
-
-/* dropdown nav-link active */
-.active .nav-link-dropdown-container {
   @extend .active-nav-link;
 }
 

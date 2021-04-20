@@ -1,7 +1,7 @@
 <li [class.active]="isNavLinkActive(navLink)" class="nav-item">
   <ng-container *ngIf="hasSubs">
     <div ngbDropdown class="nav-link-dropdown-container">
-      <button class="btn nav-link-dropdown" ngbDropdownToggle>{{ navLink.text | translate }}</button>
+      <a class="nav-link" ngbDropdownToggle>{{ navLink.text | translate }}</a>
       <div ngbDropdownMenu>
         <div *ngFor="let sub of navLink.subs"
              [class.active-nav-link-dropdown-sub]="isNavLinkActive(sub)" class="m-2">
