@@ -1,0 +1,64 @@
+.chat-bot-message-wrapper {
+  padding-top: 1.5rem;
+  min-width: 25rem;
+  max-width: 25rem;
+  width: 25rem;
+}
+
+.chat-bot-message {
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.chat-bot-message-before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  border: 0.75rem solid transparent;
+  border-top: none;
+  border-bottom-color: white;
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+.chat-bot-message-left {
+  @extend .chat-bot-message;
+  text-align: left;
+}
+
+.chat-bot-message-right {
+  @extend .chat-bot-message;
+  text-align: right;
+}
+
+.chat-bot-message-left::before {
+  @extend .chat-bot-message-before;
+  left: 1.5em;
+}
+
+.chat-bot-message-right::before {
+  @extend .chat-bot-message-before;
+  right: 1.5em;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-left {
+  @extend .avatar;
+  margin-left: 0.8rem;
+}
+
+.avatar-right {
+  @extend .avatar;
+  margin-left: 21.2rem;
+}
+
+

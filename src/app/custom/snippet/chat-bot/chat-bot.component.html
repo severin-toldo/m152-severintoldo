@@ -1,0 +1,37 @@
+<div class="m-5 chat-bot-wrapper">
+  <div class="chat-bot-header border rounded-top">
+    <div class="row">
+      <div class="col-10">
+        <app-heading-two [title]="'Chat-Bot'" [showSpacing]="false" [centerText]="false"></app-heading-two>
+      </div>
+      <div class="col-2">
+        <button type="button" class="close mr-3" (click)="close()">
+          <span>&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="chat-bot-chat-area border rounded-bottom">
+    <app-chat-bot-message *ngFor="let message of messages" [message]="message"></app-chat-bot-message>
+    <br/>
+    <br/>
+    <form class="contact-form"
+          [formGroup]="form"
+          (ngSubmit)="sendMessage()">
+      <div class="row">
+        <div class="col-9">
+          <div class="form-group">
+            <label for="message">Nachricht</label>
+            <input type="text" class="form-control" id="message" placeholder="Nachricht" formControlName="message" required>
+          </div>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-primary rounded-pill send-message-button" [disabled]="!form.valid">Senden</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,22 @@
+.chat-bot-wrapper {
+
+}
+
+.chat-bot-header {
+  width: 31rem;
+  height: 4rem;
+  padding-top: 0.8rem;
+  padding-left: 1rem;
+}
+
+.chat-bot-chat-area {
+  padding: 2rem;
+  width: 31rem;
+  height: 45rem;
+  overflow: scroll;
+  overflow-x:hidden;
+}
+
+.send-message-button {
+  margin-top: 2rem;
+}

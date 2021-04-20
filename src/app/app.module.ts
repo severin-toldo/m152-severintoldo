@@ -18,7 +18,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import { ContentComponent } from './custom/component/content/content.component';
 import {FeatherModule} from "angular-feather";
-import {AlertTriangle, Menu, Volume2} from "angular-feather/icons";
+import {AlertTriangle, Menu, Twitch, User, Volume2} from "angular-feather/icons";
 import { NavLinkComponent } from './custom/snippet/nav/nav-link/nav-link.component';
 import { DefaultOrderKeyvaluePipe } from './custom/pipe/default-order-keyvalue.pipe';
 import { FileFormatsImageComponent } from './intercom/file-formats/file-formats-image/file-formats-image.component';
@@ -55,6 +55,8 @@ import { FooterComponent } from './custom/snippet/footer/footer.component';
 import { AnimationsComponent } from './intercom/animations/animations.component';
 import { AppearDirective } from './custom/directive/appear.directive';
 import { GalleryComponent } from './intercom/gallery/gallery.component';
+import { ChatBotComponent } from './custom/snippet/chat-bot/chat-bot.component';
+import { ChatBotMessageComponent } from './custom/snippet/chat-bot/chat-bot-message/chat-bot-message.component';
 
 
 export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -73,7 +75,9 @@ const translateModuleConfig = {
 const featherModuleConfig = {
   Menu,
   AlertTriangle,
-  Volume2
+  Volume2,
+  User,
+  Twitch
 };
 
 const toastrModuleConfig = {
@@ -124,6 +128,8 @@ const toastrModuleConfig = {
     AnimationsComponent,
     AppearDirective,
     GalleryComponent,
+    ChatBotComponent,
+    ChatBotMessageComponent,
   ],
   imports: [
     BrowserModule,

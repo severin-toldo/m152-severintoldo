@@ -1,0 +1,23 @@
+<div *ngIf="message.alignment === 'left'" class="chat-bot-message-wrapper">
+  <i-feather class="avatar-left" name="{{ message.avatarName }}"></i-feather>
+  <br/>
+  <p class="chat-bot-message-left">
+    {{ message.message }}
+    <small class="text-muted float-right">{{ message.date | date: 'hh:mm'}}</small>
+  </p>
+</div>
+
+<div *ngIf="message.alignment === 'right'" class="chat-bot-message-wrapper">
+  <i-feather class="avatar-right" name="{{ message.avatarName }}"></i-feather>
+  <br/>
+  <p class="chat-bot-message-right">
+    {{ message.message }}
+    <small class="text-muted float-left">{{ message.date | date: 'hh:mm'}}</small>
+  </p>
+</div>
+
+
+
+
+
+
