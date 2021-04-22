@@ -38,7 +38,7 @@ export class CookieWarningComponent implements OnInit {
 
   public save(value: any) {
     console.log(value);
-    this.cookieService.set('cookie_warning_response', value);
+    this.cookieService.set('cookie_warning_response', JSON.stringify(value));
     this.hideToaster();
   }
 
