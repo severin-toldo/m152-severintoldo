@@ -20,6 +20,7 @@ export class ChatBotComponent implements OnInit {
 
   @Output() public onClose = new EventEmitter<void>();
 
+  @ViewChild('chatBotChatArea') public chatBotChatArea: ElementRef<HTMLDivElement>;
 
   constructor(private fb: FormBuilder,
               private routesService: RoutesService,
@@ -92,9 +93,10 @@ export class ChatBotComponent implements OnInit {
     this.addMessage(msg);
   }
 
-  // TODO scroll to bottom
   private addMessage(msg: ChatMessage): void {
     this.messages.push(msg);
+    setTimeout(() => {
+      this.chatBotChatArea.nativeElement.scrollTop = this.chatBotChatArea.nativeElement.scrollHeight;
+    }, 500);
   }
-
 }
