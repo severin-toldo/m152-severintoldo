@@ -1,6 +1,6 @@
 <app-nav></app-nav>
 <router-outlet></router-outlet>
 <app-cookie-warning></app-cookie-warning>
-<i-feather class="chat-bot-button text-primary" name="message-square" (click)="openChatBot()"></i-feather>
+<i-feather *ngIf="!isMobile" class="chat-bot-button text-primary" name="message-square" (click)="openChatBot()"></i-feather>
 <app-chat-bot *ngIf="chatBotVisible" (onClose)="closeChatBot()" class="chat-bot"></app-chat-bot>
 <app-footer class="mt-auto"></app-footer>
